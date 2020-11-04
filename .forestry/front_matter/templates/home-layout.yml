@@ -3,38 +3,46 @@ label: Home Layout
 hide_body: true
 fields:
 - name: slideshow
-  type: field_group
-  config: {}
+  type: field_group_list
   fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
   - name: heading
     type: text
     config:
       required: false
     label: Heading
   - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: body
     type: textarea
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
       schema:
         format: markdown
-    label: Subtitle
-  - name: link_label
-    type: text
-    config:
-      required: false
-    label: Link Label
+    label: Body
   - name: link
     type: text
     config:
       required: false
     label: Link
-  - name: image
-    type: file
+  - name: link_label
+    type: text
     config:
-      maxSize: 2
-    label: Image
+      required: false
+    label: Link Label
+  config:
+    min: 
+    max: 
+    labelField: 
   label: Slideshow
 - name: home_sections
   type: blocks

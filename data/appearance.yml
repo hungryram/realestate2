@@ -1,0 +1,15 @@
+---
+footer:
+  additional_links:
+    pages: []
+  footer_background_color: ''
+  background_image: ''
+branding:
+  site_title: Real Estate
+  logo: "/uploads/cropped-logotrans.png"
+  favicon: "/uploads/cropped-logotrans.png"
+header:
+  top_header_color: "#E8E8E8"
+  header_background_color: "#0B1723"
+  enable_white_text: false
+  enable_white_text_top: false

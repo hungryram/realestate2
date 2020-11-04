@@ -81,3 +81,5 @@ fields:
       label: Pages
     label: Additional Links
   label: Footer
+pages:
+- data/appearance.yml

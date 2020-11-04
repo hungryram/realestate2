@@ -6,4 +6,7 @@ slideshow:
   link: https://www.hungryram.com
   image: "/uploads/clean-living-room.jpg"
   body: Testing body background
-home_sections: []
+home_sections:
+- template: home-testimonial
+  heading: ''
+  body: ''

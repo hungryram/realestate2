@@ -17,6 +17,12 @@ sections:
   match: "*"
   templates:
   - pages
+- type: heading
+  label: Default Pages
+- type: document
+  path: content/testimonials/_index.md
+  label: Testimonials
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

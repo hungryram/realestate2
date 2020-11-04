@@ -10,7 +10,6 @@ sections:
 - type: document
   path: data/appearance.yml
   label: Appearance
-  match: "**/*"
 - type: document
   path: data/homelayout.yml
   label: Home Layout

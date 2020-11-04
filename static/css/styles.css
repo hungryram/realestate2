@@ -1,0 +1,97 @@
+/* HERO */
+
+/* .hero-foot > .container > .columns > .column::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    height: 2px;
+    background: white;
+    margin: 20px auto;
+} */
+
+.hero-body.slide-content {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+/* div.hero-body {
+    display: flex;
+    align-items: center;
+    height: inherit;
+} */
+
+a.hero-button {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    color: #fff;
+    transition: width .3s ease;
+}
+
+a.hero-button:hover {
+    color: #C69C6D;
+    transition: width .3s ease;
+}
+
+a.hero-button:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    top: 12px;
+    height: 4px;
+    background: #fff;
+    left: -95px;
+    transition: width .2s ease;
+}
+
+a.hero-button:hover:before {
+    width: 80px;
+    transition: width .2s ease;
+}
+
+
+/** Hero Text Animation **/
+  
+  @-webkit-keyframes fadeInUpSD {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInUpSD {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInUpSD {
+    -webkit-animation-name: fadeInUpSD;
+    animation-name: fadeInUpSD;
+  }
+  
+  .slick-active .slide-content {
+    animation-name: fadeInUpSD;
+    animation-duration: 1s;
+    opacity: 1;
+    width: 100%;
+  }
+  
+  /* Text Animation End **/

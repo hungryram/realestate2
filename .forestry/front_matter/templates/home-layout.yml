@@ -1,4 +1,45 @@
 ---
 label: Home Layout
 hide_body: true
-fields: []
+fields:
+- name: slideshow
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: subtitle
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Subtitle
+  - name: link_label
+    type: text
+    config:
+      required: false
+    label: Link Label
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  label: Slideshow
+- name: home_sections
+  type: blocks
+  label: Home Sections
+  template_types: []
+  config:
+    min: 
+    max: 

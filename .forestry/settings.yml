@@ -5,9 +5,8 @@ admin_path: static/admin
 webhook_url: 
 sections:
 - type: document
-  path: data/profile.yaml
+  path: data/profile.yml
   label: Profile
-  match: "**/*"
 - type: directory
   path: content
   label: Pages

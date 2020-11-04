@@ -8,6 +8,10 @@ sections:
   path: data/profile.yml
   label: Profile
 - type: document
+  path: data/appearance.yml
+  label: Appearance
+  match: "**/*"
+- type: document
   path: data/homelayout.yml
   label: Home Layout
 - type: directory

@@ -36,3 +36,13 @@ fields:
   config:
     required: false
   label: Image Alt Tag
+- name: image_width
+  type: number
+  label: Image Width
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 

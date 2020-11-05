@@ -51,3 +51,22 @@ home_sections:
       home. Get emails directly to your inbox and manage the lead as you wish.
   background_color: ''
   enable_white_text: true
+- template: tiles
+  heading: Featured Areas
+  body: View our best homes
+  tile_one:
+    heading: Feature One
+    image: "/uploads/livingroom.jpg"
+    link: https://google.com
+  tile_two:
+    heading: Feature Two
+    image: "/uploads/group-of-people-sitting-indoors-3184360.jpg"
+    link: "/contact"
+  tile_three:
+    heading: Feature Three
+    image: "/uploads/clean-living-room.jpg"
+    link: "/contact"
+  tile_four:
+    heading: Feature Four
+    image: "/uploads/derek-thomson-p50hcc0yrl0-unsplash.jpg"
+    link: "/team"

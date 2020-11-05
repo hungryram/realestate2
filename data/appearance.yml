@@ -8,6 +8,7 @@ footer:
   footer_bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eveniet!
     Officia repellendus aliquam necessitatibus iure, porro voluptas magnam laboriosam
     nesciunt
+  enable_black_text: true
 branding:
   site_title: Real Estate
   logo: "/uploads/cropped-logotrans.png"

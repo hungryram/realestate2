@@ -91,5 +91,17 @@ fields:
       maxSize: 2
     label: Image
   label: Pages
+- name: sidebar
+  type: field_group
+  config: {}
+  fields:
+  - name: sidebar
+    type: blocks
+    template_types: []
+    config:
+      min: 
+      max: 
+    label: Sidebar
+  label: Sidebar
 pages:
 - data/appearance.yml

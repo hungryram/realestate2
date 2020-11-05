@@ -13,3 +13,5 @@ header:
   header_background_color: "#0B1723"
   enable_white_text: false
   enable_white_text_top: false
+pages:
+  image: "/uploads/clean-living-room.jpg"

@@ -2,6 +2,8 @@
 {{ partial "home/slideshow" . }}
 
 {{ range .Site.Data.homelayout.home_sections }}
+
+
   {{ if eq "home-testimonial" .template }}
     <div class="section">
     <div class="container">
@@ -9,7 +11,7 @@
             <div class="column">
                 {{ if .heading }}<h1 class="title is-2 has-text-centered">{{ .heading }}</h1>{{ end }}
                 {{ if .body }}
-                <p class="has-text-centered">{{ .body }}</p>
+                <p class="has-text-centered">{{ .body | markdownify }}</p>
                 {{ end }}
             </div>
         </div>
@@ -40,6 +42,87 @@
     </div>
     </div>
   {{ end }}
+
+  {{ if eq "home-agent" .template }}
+    <div class="section">
+      <div class="container">
+        <div class="columns mb-6">
+          <div class="column">
+            {{ if .heading }}
+            <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="agent-container">
+          <div class="responsive-slide">
+          {{ range where $.Site.RegularPages "Type" "our-team" }}
+            <a href="{{ .Permalink }}">
+              <div class="card ml-2 mr-2 mb-4">
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="object-fit: cover;width:100%">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content has-text-centered">
+                    <h1 class="title is-5 has-text-black has-text-black mb-2">{{ .Title }}</h1>
+                    <span class="is-block">{{ .Params.contact.cell }}</span>
+                    <span class="is-block">{{ .Params.contact.email }}</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if eq "home-blog" .template }}
+    <div class="section">
+      <div class="container">
+        <div class="columns mb-6">
+          <div class="column">
+            {{ if .heading }}
+            <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+            {{ end }}
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+          </div>
+        </div>
+        <div class="columns is-multiline">
+          {{ range first 4 (where $.Site.RegularPages "Type" "blog") }}
+          <div class="column is-6 mb-4">
+            <div class="card">
+                <div class="columns is-vcentered is-variable is-3">
+                    <div class="column pb-0 pt-0">
+                        <img src="{{ .Params.featured_image }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                    </div>
+                    <div class="column">
+                        <div class="content pr-4 pl-2">
+                            <h1 class="title is-6 mb-2">{{ .Title }}</h1>
+                            <div class="summary-card">
+                            <time class="is-size-7"> {{.Date.Format "Jan 2, 2006" }}</time>
+                              <p>{{ .Summary | truncate 100 }}</p>
+                                <a href="{{ .Permalink }}" class="link"><strong>Continue reading...</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+
 {{ end }}
 
 {{ partial "global/footer" . }}

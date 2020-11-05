@@ -1,5 +1,24 @@
-<footer class="footer">
-    <h1 class="title is-4">footer</h1>
+{{ $footer := .Site.Data.appearance.footer }}
+<footer class="footer" {{ if $footer.footer_background_color }}style="{{ safeHTMLAttr (printf "background-color: %s" $footer.footer_background_color) }}"{{ else }}style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ $footer.background_image }}) no-repeat center;"{{ end }}>
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    {{ if $footer.logo }}
+                    <img src="{{ $footer.logo }}" alt="{{ .Site.Data.appearance.branding.site_title }}">
+                    {{ end }}
+                </div>
+                <div class="column">
+                    {{ if $footer.footer_bio }}
+                    <p>{{ $footer.footer_bio }}</p>
+                    {{ end }}
+                </div>
+                <div class="column">
+                    <h4 class="title is-4">Contact</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

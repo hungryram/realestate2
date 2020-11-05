@@ -10,13 +10,13 @@
             <div class="card">
                 <div class="columns is-vcentered is-variable is-3">
                     <div class="column is-4 pb-0 pt-0">
-                        <img src="{{ .Params.details.agent_photo }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                        <img src="{{ .Params.photos.photo }}" alt="" style="width:100%;height:250px;object-fit:cover">
                     </div>
                     <div class="column">
                         <div class="content pr-6 pl-6">
                             <h1 class="title is-4 mb-2">{{ .Title }}</h1>
                             {{ if .Params.details.title }}<span class="is-block mb-4">{{ .Params.details.title }}</span>{{ end }}
-                            {{ if .Params.contact.cell }}
+                            {{ if .Params.contact.office_phone }}
                             <div class="level mb-0 is-mobile">
                                 <div class="level-left">
                                     <div class="level-item">
@@ -28,25 +28,25 @@
                                 <div class="level-right">
                                     <div class="level-item">
                                         <div>
-                                            <a href="tel:{{ .Params.contact.cell }}" class="has-text-black">{{ .Params.contact.cell }}</a>
+                                            <a href="tel:{{ .Params.contact.office_phone }}" class="has-text-black">{{ .Params.contact.office_phone }}</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {{ end }}
-                            {{ if .Params.contact.phone }}
+                            {{ if .Params.contact.fax_number }}
                             <div class="level mb-0 is-mobile">
                                 <div class="level-left">
                                     <div class="level-item">
                                         <div>
-                                            <strong>Phone:</strong>
+                                            <strong>Fax:</strong>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="level-right">
                                     <div class="level-item">
                                         <div>
-                                            <a href="tel:{{ .Params.contact.cell }}" class="has-text-black">{{ .Params.contact.phone }}</a>
+                                            <a href="tel:{{ .Params.contact.fax_number }}" class="has-text-black">{{ .Params.contact.fax_number }}</a>
                                         </div>
                                     </div>
                                 </div>

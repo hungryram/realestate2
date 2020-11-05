@@ -49,6 +49,10 @@ em {
     line-height: 2;
 }
 
+div.summary-card p {
+  line-height: 26px;
+  font-size: 14px;
+}
 
 .link {
   font-style: italic;

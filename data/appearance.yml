@@ -2,7 +2,7 @@
 footer:
   additional_links:
     pages: []
-  footer_background_color: "#404040"
+  footer_background_color: "#000"
   background_image: ''
   logo: "/uploads/cropped-logotrans.png"
   footer_bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eveniet!

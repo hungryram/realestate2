@@ -3,7 +3,7 @@
     <div class="column">
         <div class="content">
             <h1 class="title is-3 mb-2">{{ .Title }}</h1>
-            {{ if .Params.details.title }}<span class="is-block">{{ .Params.details.title }}</span>{{ end }}
+            <h4 class="title is-6 mb-0">{{ .Params.details.title }}{{ if .Params.details.office }}{{ with .Site.GetPage .Params.details.office }} at <a href="{{ .Permalink }}" class="office-link secondary-btn">{{ .Params.title }}</a>{{end}}{{end}}</h4>
             {{ if .Params.details.license_type }}<p>{{ .Params.details.license_type }} {{ .Params.details.license_number }}</p>{{ end }}
         </div>
     </div>

@@ -14,5 +14,5 @@ home_sections:
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market
 - template: home-blog
-  heading: ''
-  body: ''
+  heading: 'Our Blog'
+  body: 'Keep up with latest posts'

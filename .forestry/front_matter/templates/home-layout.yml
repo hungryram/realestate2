@@ -51,6 +51,7 @@ fields:
   - home-testimonial
   - home-agent
   - home-blog
+  - text-and-image
   config:
     min: 
     max: 

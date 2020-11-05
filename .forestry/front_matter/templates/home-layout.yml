@@ -50,6 +50,7 @@ fields:
   template_types:
   - home-testimonial
   - home-agent
+  - home-blog
   config:
     min: 
     max: 

@@ -1,4 +1,10 @@
 ---
 label: Side Blog Category
 hide_body: true
-fields: []
+fields:
+- name: blog_categories
+  type: text
+  config:
+    required: false
+  label: Blog Categories
+  hidden: true

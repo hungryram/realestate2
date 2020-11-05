@@ -53,6 +53,7 @@ fields:
   - featured-boxes
   - home-blog
   - text-and-image
+  - text-and-contact-form
   config:
     min: 
     max: 

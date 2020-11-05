@@ -54,6 +54,7 @@ fields:
   - home-blog
   - text-and-image
   - text-and-contact-form
+  - tiles
   config:
     min: 
     max: 

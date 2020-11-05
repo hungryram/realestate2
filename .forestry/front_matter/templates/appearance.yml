@@ -80,6 +80,20 @@ fields:
           path: 
       label: Pages
     label: Additional Links
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  - name: footer_bio
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Footer Bio
   label: Footer
 - name: pages
   type: field_group

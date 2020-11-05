@@ -13,3 +13,6 @@ home_sections:
 - template: home-agent
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market
+- template: home-blog
+  heading: ''
+  body: ''

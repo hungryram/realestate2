@@ -49,6 +49,7 @@ fields:
   label: Home Sections
   template_types:
   - home-testimonial
+  - home-agent
   config:
     min: 
     max: 

@@ -19,3 +19,5 @@ sidebar:
   sidebar:
   - template: side-blog-category
     blog_categories: ''
+  - template: latest-posts
+    latest_posts: ''

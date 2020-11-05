@@ -1,4 +1,7 @@
 +++
+[menu.main]
+name = "Testimonials"
+weight = 2
 [[testimonials]]
 date = "Sep 20, 2020"
 name = "Marc Spears"

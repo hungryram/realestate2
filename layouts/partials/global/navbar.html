@@ -1,7 +1,21 @@
 {{ $navbar := .Site.Data.appearance.branding }}
 {{ $navColor := .Site.Data.appearance.header }}
+{{ $navContact := .Site.Data.profile.contact_information }}
 <!-- Hero head: will stick at the top -->
- <div class="hero-head">
+<nav class="nav-wrap">
+<div class="nav-topbar pt-1 pb-1" style="{{ safeHTMLAttr (printf "background-color: %s" $navColor.top_header_color) }}">
+  <div class="container">
+    <div class="has-text-right">
+      <p><a href="mailto:{{ $navContact.email }}" class="{{ if $navColor.enable_white_text }}has-text-white{{ else }}has-text-black{{ end }} is-size-6" style="display:flex;align-items:center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="{{ if $navColor.enable_white_text }}#fff{{else}}#000{{ end }}" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <polyline points="3 7 12 13 21 7" />
+        </svg>{{ $navContact.email }}</a></p>
+    </div>
+  </div>
+</div>
+ <div class="hero-head pt-4 pb-4">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
@@ -48,3 +62,4 @@
       </div>
     </nav>
   </div>
+  </nav>

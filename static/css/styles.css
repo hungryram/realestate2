@@ -198,3 +198,14 @@ ul.sidebar-category li {
   border-bottom: 1px solid #eee;
   padding: 5px;
 }
+
+/* FEATURED BOX HOME */
+
+div.featured {
+  transition: 3s;
+}
+
+div.featured:hover {
+  opacity: .8;
+  transition: .3s;
+}

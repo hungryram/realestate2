@@ -1,12 +1,12 @@
 {{ partial "global/head" . }}
   {{ partial "global/navbar" . }}
   
-  <div style="height: 25vh;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url({{ .Site.Data.appearance.pages.image }}); background-size: cover;background-position: center">
+  <div style="padding-top:50px;padding-bottom:50px;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url({{ .Site.Data.appearance.pages.image }}); background-size: cover;background-position: center">
     <div class="section">
         <div class="container">
             <div class="columns has-text-centered">
                 <div class="column">
-                    <h2 class="title is-3">{{ replace .Name "-" " " | title }}</h2>
+                    <h2 class="title is-3 has-text-white">{{ replace .Name "-" " " | title }}</h2>
                 </div>
             </div>
         </div>

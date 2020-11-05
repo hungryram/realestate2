@@ -7,6 +7,15 @@ slideshow:
   image: "/uploads/clean-living-room.jpg"
   body: Testing body background
 home_sections:
+- template: text-and-image
+  heading: Discover Our Finest Homes
+  body: Each section of the home page can be arranged and customized through your
+    phone or computer. Easily manage your website through our website editor customized
+    specifically for real estate professionals.
+  button: Read more
+  button_link: https://google.com
+  image: "/uploads/agent-4.jpg"
+  image_alt_tag: John
 - template: home-testimonial
   heading: Heading
   body: ''
@@ -14,5 +23,5 @@ home_sections:
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market
 - template: home-blog
-  heading: 'Our Blog'
-  body: 'Keep up with latest posts'
+  heading: Our Blog
+  body: Keep up with latest posts

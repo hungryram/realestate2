@@ -1,10 +1,10 @@
 {{ define "main" }}
-{{ $agentCount := len (where .Site.RegularPages "Section" "==" "our-team")  }}
+{{ $partnerCount := len (where .Site.RegularPages "Section" "==" "partners")  }}
 {{ $agentContact := .Params.contact }}
-{{ if gt $agentCount 0 }}
+{{ if gt $partnerCount 0 }}
 <div class="inner-container">
     <div class="columns is-multiline">
-        {{ $paginator := .Paginate (where .Pages "Type" "our-team") 5 }}
+        {{ $paginator := .Paginate (where .Pages "Type" "partners") 5 }}
         {{ range $paginator.Pages.ByWeight }}
         <div class="column is-full agent-container mb-4">
             <div class="card">
@@ -84,7 +84,7 @@
 </div>
 {{ else }}
 <div class="inner-container">
-    <h2 class="title is-4">No Team Added Yet</h2>
+    <h2 class="title is-4">No partners added yet</h2>
 </div>
 {{ end }}
 {{ end }}

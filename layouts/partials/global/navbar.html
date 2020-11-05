@@ -1,13 +1,15 @@
- <!-- Hero head: will stick at the top -->
+{{ $navbar := .Site.Data.appearance.branding }}
+{{ $navColor := .Site.Data.appearance.header }}
+<!-- Hero head: will stick at the top -->
  <div class="hero-head">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ .Site.BaseURL }}">
             {{ if .Site.Data.design.logo_and_title.logo }}
-              <img src="{{ .Site.Data.design.logo_and_title.logo | absURL }}" alt="{{ .Site.Data.profile.primary_company_name }}">
+              <img src="{{ $navbar.logo | absURL }}" alt="{{ $navbar.site_title }}">
             {{ else }}
-            <h1 class="title is-3">{{ .Site.Data.design.logo_and_title.site_title }}</h1>
+            <h1 class="title is-3{{ if $navColor.enable_white_text }} has-text-white{{ end }}">{{ $navbar.site_title }}</h1>
             {{ end }}
           </a>
           <span class="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -22,14 +24,14 @@
         {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
             <div class="navbar-item has-dropdown is-hoverable main-drop">
-                <a class="navbar-link" href="javascript:;">
+                <a class="navbar-link{{ if $navColor.enable_white_text }} has-text-white{{ end }}" href="javascript:;">
                     {{ .Name }}
                 </a>
                 <!-- First Level Dropdown -->
                     <div class="navbar-dropdown">
                         {{ range .Children }}
                             
-                            <a class="navbar-item {{ if .HasChildren }}navbar-link first-drop is-hoverable{{ end }}" href="{{ if .HasChildren }}javascript:;{{ else }}{{ .URL | absURL }}{{ end }}">
+                            <a class="navbar-item {{ if .HasChildren }}navbar-link first-drop is-hoverable{{ end }}" href="{{ if .HasChildren }}javascript:;{{ else }}{{ .URL | absURL }}{{ end }}{{ if $navColor.enable_white_text }} has-text-white{{ end }}">
                             {{ .Name }}
                             </a>
                         
@@ -38,7 +40,7 @@
                   <!-- End first level Dropdown -->
             </div>
             {{ else }} <!-- Else No Drop Down-->
-            <a href="{{ .URL |absURL }}" class="navbar-item">{{ .Name }}</a>
+            <a href="{{ .URL |absURL }}" class="navbar-item{{ if $navColor.enable_white_text }} has-text-white{{ end }}">{{ .Name }}</a>
         {{ end }}
         {{ end }} <!-- End range menu -->
       </div>

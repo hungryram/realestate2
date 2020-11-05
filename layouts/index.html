@@ -1,3 +1,45 @@
 {{ partial "global/head" . }}
 {{ partial "home/slideshow" . }}
+
+{{ range .Site.Data.homelayout.home_sections }}
+  {{ if eq "home-testimonial" .template }}
+    <div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                {{ if .heading }}<h1 class="title is-2 has-text-centered">{{ .heading }}</h1>{{ end }}
+                {{ if .body }}
+                <p class="has-text-centered">{{ .body }}</p>
+                {{ end }}
+            </div>
+        </div>
+        <div class="testimonial-container">
+            {{ range where $.Site.Pages "Type" "testimonials" }}
+            <div class="responsive-slide">
+                {{ range .Params.testimonials }}
+                <div class="testimonial">
+                    <div class="card-content">
+                      <div class="content">
+                        <p>{{ .testimonial }}</p>
+                      </div>
+                      <div class="media">
+                        <div class="media-left">
+                            {{ if .image }}<img src="/assets/user.svg" alt="{{ .name }}">{{ end }}
+                        </div>
+                        <div class="media-content">
+                          <em>{{ .name }}</em>
+                          <em class="is-block">{{ .date }}</em>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    </div>
+  {{ end }}
+{{ end }}
+
 {{ partial "global/footer" . }}

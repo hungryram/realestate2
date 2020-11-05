@@ -1,3 +1,7 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.pathfinderscarpetcleaning.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+summaryLength = 20
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1

@@ -1,0 +1,17 @@
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                {{ if .Params.heading }}<h1 class="title is-2">{{ .heading }}</h1>{{ end }}
+                {{ if .Params.body }}
+                <p>{{ .body }}</p>
+                {{ end }}
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-4">
+                {{ .Params.testimonial }}
+            </div>
+        </div>
+    </div>
+</div>

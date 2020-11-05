@@ -8,5 +8,5 @@ slideshow:
   body: Testing body background
 home_sections:
 - template: home-testimonial
-  heading: ''
+  heading: 'Heading'
   body: ''

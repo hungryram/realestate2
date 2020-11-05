@@ -99,6 +99,7 @@ fields:
     type: blocks
     template_types:
     - side-blog-category
+    - latest-posts
     config:
       min: 
       max: 

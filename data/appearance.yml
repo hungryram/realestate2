@@ -15,3 +15,7 @@ header:
   enable_white_text_top: false
 pages:
   image: "/uploads/clean-living-room.jpg"
+sidebar:
+  sidebar:
+  - template: side-blog-category
+    blog_categories: ''

@@ -50,6 +50,7 @@ fields:
   template_types:
   - home-testimonial
   - home-agent
+  - featured-boxes
   - home-blog
   - text-and-image
   config:

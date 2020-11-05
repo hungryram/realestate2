@@ -50,3 +50,4 @@ home_sections:
     body: Engage with our professional real estate agents to sell, buy or rent your
       home. Get emails directly to your inbox and manage the lead as you wish.
   background_color: ''
+  enable_white_text: true

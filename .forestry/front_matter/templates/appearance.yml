@@ -97,7 +97,8 @@ fields:
   fields:
   - name: sidebar
     type: blocks
-    template_types: []
+    template_types:
+    - side-blog-category
     config:
       min: 
       max: 

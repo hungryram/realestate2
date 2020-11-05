@@ -8,5 +8,8 @@ slideshow:
   body: Testing body background
 home_sections:
 - template: home-testimonial
-  heading: 'Heading'
+  heading: Heading
   body: ''
+- template: home-agent
+  heading: Our Team
+  body: Helpful agents that will guide you in the real estate market

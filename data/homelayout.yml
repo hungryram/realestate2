@@ -16,7 +16,7 @@ home_sections:
   button_link: https://google.com
   image: "/uploads/agent-4.jpg"
   image_alt_tag: John
-  image_width: '200'
+  image_width: '400'
 - template: home-testimonial
   heading: Heading
   body: ''

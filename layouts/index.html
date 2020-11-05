@@ -115,12 +115,34 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
           {{ end }}
           </div>
         </div>
       </div>
+  {{ end }}
+
+  {{ if eq "text-and-image" .template }}
+  <div class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+        {{ if .image }}
+        <div class="column has-text-centered">
+          <img src="{{ .image }}" alt="{{ .image_alt_tag }}" width="{{ .image_width }}">
+        </div>
+        {{ end }}
+        <div class="column content">
+          <div class="is-block">
+            <h2 class="title is-4">{{ .heading }}</h2>
+            <p>{{ .body | markdownify }}</p>
+          </div>
+          <div class="is-block mt-5">
+            <a href="{{ .button_link }}" class="primary-btn">{{ .button }}</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
   {{ end }}
 
 {{ end }}

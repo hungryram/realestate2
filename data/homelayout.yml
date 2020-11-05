@@ -20,6 +20,20 @@ home_sections:
 - template: home-testimonial
   heading: Heading
   body: ''
+- template: featured-boxes
+  heading: Featured Communities
+  body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit
+    non delectus eos, quas, dolorem alias '
+  featured:
+  - image: "/uploads/livingroomandtv.jpg"
+    link: "/la"
+    heading: Los Angeles
+  - heading: Whittier
+    image: "/uploads/newluxuryext.jpg"
+    link: "/whittier"
+  - heading: Corona
+    image: "/uploads/clean-living-room.jpg"
+    link: "/corona"
 - template: home-agent
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market

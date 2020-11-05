@@ -51,11 +51,21 @@ fields:
     config:
       required: false
     label: Phone
+  - name: cell
+    type: text
+    config:
+      required: false
+    label: Cell
   - name: email
     type: text
     config:
       required: false
     label: Email
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
   label: Contact Information
 - name: search_engine_optimization
   type: field_group

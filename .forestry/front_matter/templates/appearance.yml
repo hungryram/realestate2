@@ -81,5 +81,15 @@ fields:
       label: Pages
     label: Additional Links
   label: Footer
+- name: pages
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  label: Pages
 pages:
 - data/appearance.yml

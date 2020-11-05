@@ -13,6 +13,13 @@ sections:
 - type: document
   path: data/homelayout.yml
   label: Home Layout
+- type: directory
+  path: content
+  label: Pages
+  create: documents
+  match: "*"
+  templates:
+  - pages
 - type: heading
   label: Blog
 - type: directory
@@ -22,13 +29,6 @@ sections:
   match: "**/*"
   templates:
   - blog
-- type: directory
-  path: content
-  label: Pages
-  create: documents
-  match: "*"
-  templates:
-  - pages
 - type: heading
   label: Default Pages
 - type: directory

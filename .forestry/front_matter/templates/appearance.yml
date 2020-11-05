@@ -48,6 +48,16 @@ fields:
     label: Enable White Text
     description: Enables white text on top header bar
   label: Header
+- name: pages
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 2
+    label: Image
+  label: Pages
 - name: footer
   type: field_group
   config: {}
@@ -63,6 +73,9 @@ fields:
     config:
       maxSize: 64
     label: Background Image
+  - name: enable_black_text
+    type: boolean
+    label: Enable Black Text
   - name: additional_links
     type: field_group
     config: {}
@@ -95,16 +108,6 @@ fields:
         format: markdown
     label: Footer Bio
   label: Footer
-- name: pages
-  type: field_group
-  config: {}
-  fields:
-  - name: image
-    type: file
-    config:
-      maxSize: 2
-    label: Image
-  label: Pages
 - name: sidebar
   type: field_group
   config: {}

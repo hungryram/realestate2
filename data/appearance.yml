@@ -15,9 +15,9 @@ branding:
   favicon: "/uploads/cropped-logotrans.png"
 header:
   top_header_color: "#707984"
-  header_background_color: ''
-  enable_white_text: false
-  enable_white_text_top: false
+  header_background_color: "#0B1723"
+  enable_white_text: true
+  enable_white_text_top: true
 pages:
   image: "/uploads/clean-living-room.jpg"
 sidebar:

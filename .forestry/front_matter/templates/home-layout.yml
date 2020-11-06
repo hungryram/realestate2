@@ -29,6 +29,9 @@ fields:
       schema:
         format: markdown
     label: Body
+  - name: enable_white_text
+    type: boolean
+    label: Enable White Text
   - name: link
     type: text
     config:

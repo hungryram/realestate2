@@ -1,7 +1,7 @@
 /* GLOBAL */
 
 div.home-section div.section:nth-child(odd){
-  background:#F7F7F7;
+  background:#F7F8F9;
 }
 
 body h1.subtitle,
@@ -65,7 +65,22 @@ div.summary-card p {
 
 .primary-btn {
   padding: 10px 20px;
-  border:1px solid black;
+  transition: .3s;
+  border-radius: 3px;
+}
+
+button.button {
+  width: 100%;
+  transition: .3s;
+  padding: 10px 20px;
+}
+
+a.primary-btn:hover,
+button.button:hover {
+  transition: .3s;
+  border: 1px solid #ccc;
+  background: transparent!important;
+  color: #222!important;
 }
 
 ul.social-block li {
@@ -75,59 +90,6 @@ ul.social-block li {
 }
 
 /* HERO */
-
-/* .hero-foot > .container > .columns > .column::after {
-    content: "";
-    width: 100px;
-    position: absolute;
-    height: 2px;
-    background: white;
-    margin: 20px auto;
-} */
-
-.hero-body.slide-content {
-    display: flex;
-    align-items: center;
-    padding-bottom: 0;
-}
-
-/* div.hero-body {
-    display: flex;
-    align-items: center;
-    height: inherit;
-} */
-
-a.hero-button {
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    left: 100px;
-    color: #fff;
-    transition: width .3s ease;
-}
-
-a.hero-button:hover {
-    color: #C69C6D;
-    transition: width .3s ease;
-}
-
-a.hero-button:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    top: 12px;
-    height: 4px;
-    background: #fff;
-    left: -95px;
-    transition: width .2s ease;
-}
-
-a.hero-button:hover:before {
-    width: 80px;
-    transition: width .2s ease;
-}
-
-
 /** Hero Text Animation **/
   
   @-webkit-keyframes fadeInUpSD {

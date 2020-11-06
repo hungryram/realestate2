@@ -9,7 +9,7 @@
     <div class="container">
         <div class="columns">
             <div class="column">
-                {{ if .heading }}<h1 class="title is-2 has-text-centered">{{ .heading }}</h1>{{ end }}
+                {{ if .heading }}<h1 class="title is-4 has-text-centered">{{ .heading }}</h1>{{ end }}
                 {{ if .body }}
                 <p class="has-text-centered">{{ .body | markdownify }}</p>
                 {{ end }}
@@ -39,6 +39,11 @@
             </div>
             {{ end }}
         </div>
+        <div class="columns">
+          <div class="column has-text-centered">
+            <a href="/testimonials" class="primary-btn">View more</a>
+          </div>
+        </div>
     </div>
     </div>
   {{ end }}
@@ -49,7 +54,7 @@
         <div class="columns mb-6">
           <div class="column">
             {{ if .heading }}
-            <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+            <h1 class="title is-4 has-text-centered">{{ .heading }}</h1>
             {{ if .body }}
             <p class="has-text-centered">{{ .body | markdownify }}</p>
             {{ end }}
@@ -78,6 +83,11 @@
           {{ end }}
         </div>
       </div>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <a href="/our-team" class="primary-btn">View more</a>
+        </div>
+      </div>
       </div>
     </div>
   {{ end }}
@@ -88,7 +98,7 @@
         <div class="columns mb-6">
           <div class="column">
             {{ if .heading }}
-            <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+            <h1 class="title is-4 has-text-centered">{{ .heading }}</h1>
             {{ end }}
             {{ if .body }}
             <p class="has-text-centered">{{ .body | markdownify }}</p>
@@ -117,6 +127,11 @@
             </div>
           </div>
           {{ end }}
+          </div>
+          <div class="columns">
+            <div class="column has-text-centered">
+              <a href="/blog" class="primary-btn">View more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -151,7 +166,7 @@
       <div class="columns mb-6">
         <div class="column">
           {{ if .heading }}
-          <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+          <h1 class="title is-4 has-text-centered">{{ .heading }}</h1>
           {{ end }}
           {{ if .body }}
           <p class="has-text-centered">{{ .body | markdownify }}</p>
@@ -273,7 +288,7 @@
       <div class="columns">
         <div class="column">
           {{ if .heading }}
-          <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+          <h1 class="title is-4 has-text-centered">{{ .heading }}</h1>
           {{ end }}
           {{ if .body }}
           <p class="has-text-centered">{{ .body | markdownify }}</p>

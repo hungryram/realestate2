@@ -1,3 +1,4 @@
+{{ $ihfID := .Site.Data.idx.ihf_client_id }}
 {{ partial "global/navbar.html" . }}
 <div class="home-slide">
 {{ range .Site.Data.homelayout.slideshow }}
@@ -22,16 +23,17 @@
   </div>
 
   <!-- Hero footer: will stick at the bottom -->
-  <div class="section hero-foot">
-    <div class="container">
-      <div class="columns has-text-left has-text-white is-mobile is-vcentered">
-        <div class="column quicksearch">
-          <script type="text/javascript" src="https://wallstrealty.idxhome.com/site/listing/search/widget/{{ $.Site.Data.idx.ihomefinder_client_id }}?style=horizontal"></script>
-          <p>Or use our <a href="http://wallstrealty.idxhome.com/listing/search/advanced/{{ $.Site.Data.idx.ihomefinder_client_id }}">advanced search feature</a></p>
-        </div>
+{{ if $.Site.Data.idx.enable_idx }}
+<div class="section hero-foot">
+  <div class="container">
+    <div class="columns has-text-left has-text-white is-mobile is-vcentered" style="background:rgba(3,7,16,0.6);padding:20px;">
+      <div class="column quicksearch">
+        <script type="text/javascript" src="https://{{ $ihfID }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
       </div>
     </div>
   </div>
+</div>
+{{ end }}
 
 </section>
 {{ end }}

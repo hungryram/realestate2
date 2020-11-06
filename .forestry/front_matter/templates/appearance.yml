@@ -23,6 +23,29 @@ fields:
       maxSize: 1
     label: Favicon
   label: Branding
+- name: colors
+  type: field_group
+  config: {}
+  fields:
+  - name: button_background_color
+    type: color
+    label: Button Background Color
+    config:
+      required: false
+      color_format: Hex
+  - name: button_text_color
+    type: color
+    config:
+      required: false
+      color_format: Hex
+    label: Button Text Color
+  - name: links
+    type: color
+    label: Links
+    config:
+      required: false
+      color_format: Hex
+  label: Colors
 - name: header
   type: field_group
   config: {}

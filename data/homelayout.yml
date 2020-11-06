@@ -6,6 +6,7 @@ slideshow:
   link: https://www.hungryram.com
   image: "/uploads/clean-living-room.jpg"
   body: Testing body background
+  enable_white_text: true
 home_sections:
 - template: text-and-image
   heading: Discover Our Finest Homes

@@ -7,6 +7,13 @@ slideshow:
   image: "/uploads/clean-living-room.jpg"
   body: Testing body background
   enable_white_text: true
+- image: "/uploads/jared-rice-pibrawhb4h8-unsplash.jpg"
+  subtitle: my subtitle
+  body: let our team help you
+  enable_white_text: true
+  link: View Properties
+  link_label: "/listings"
+  heading: Welcome to Real Estate
 home_sections:
 - template: text-and-image
   heading: Discover Our Finest Homes

@@ -1,6 +1,6 @@
 {{ partial "global/head" . }}
 {{ partial "home/slideshow" . }}
-
+<div class="home-section">
 {{ range .Site.Data.homelayout.home_sections }}
 
 
@@ -22,7 +22,7 @@
                 <div class="testimonial">
                     <div class="card-content">
                       <div class="content">
-                        <p>{{ .testimonial }}</p>
+                        <p>{{ .testimonial | truncate 170 }} <a href="/testimonial" class="link">Read more</a></p>
                       </div>
                       <div class="media">
                         <div class="media-left">
@@ -173,6 +173,150 @@
   </div>
   {{ end }}
 
-{{ end }}
+  {{ if eq "text-and-contact-form" .template }}
+  <div class="text-and-contact pt-6 pb-6" style="background:{{ if .background_image }}linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .background_image }}) no-repeat center;background-size:cover{{ else }}{{ .background_color }}{{ end }}!important">
+    <div class="inner">
+      <div class="container">
+        <div class="columns is-vcentered is-variable is-8">
+          <div class="column is-7">
+            <h2 class="title is-4 {{ if .enable_white_text }}has-text-white{{ end }}">{{ .heading }}</h2>
+            <p class="{{ if .enable_white_text }}has-text-white{{ end }}">{{ .body | markdownify }}</p>
+          </div>
+          <div class="column ml-6 mr-6">
+            <div class="text-form">
+              {{ if .form.heading }}
+              <h2 class="title is-4">{{ .form.heading }}</h2>
+              {{ end }}
+              {{ if .form.heading }}
+              <div class="summary-card mb-4">
+                <p>{{ .body | markdownify }}</p>
+              </div>
+              {{ end }}
+              {{ if .Site.Data.idx.enable_idx }}
+              <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://1stindependencerealty.idxhome.com/contact/{{ .Site.Data.idx.idx_id }}" method="POST" data-ihf-event-bound="true">
+                <div class="field is-horizontal">
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded">
+                        <input class="input" type="text" placeholder="Name" name="contactName">
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control">
+                        <input class="input" type="text" placeholder="Email" name="email">
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control">
+                        <input class="input" type="text" placeholder="Phone" name="phone">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                      <textarea id="message" placeholder="Message" name="message" class="textarea" style="height: 140px;" rows="3"> </textarea>
+                  </div>
+                </div>
+                <div class="control">
+                  <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                </div>
+              </form>
+              {{ else }}
+              <form name="Contact Footer Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input name="bot-field" type="hidden"/>
+  
+                <div class="field">
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="First Name" name="first name">
+                  </p>
+                </div>
+  
+                <div class="field">
+                  <p class="control">
+                    <input class="input" type="text" placeholder="Last Name" name="last name">
+                  </p>
+                </div>
+                
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Phone" name="phone">
+                  </div>
+                </div>
+      
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="email" placeholder="Email" name="email address">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
+                  </div>
+                </div>
+                <div class="control">
+                  <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                </div>
+              </form>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
 
+  {{ if eq "tiles" .template }}
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          {{ if .heading }}
+          <h1 class="title is-2 has-text-centered">{{ .heading }}</h1>
+          {{ end }}
+          {{ if .body }}
+          <p class="has-text-centered">{{ .body | markdownify }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="columns tiles">
+        <div class="column is-7">
+          <a href="{{ .tile_one.link }}">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .tile_one.image }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+              <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_one.heading }}</h4>
+            </div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{{ .tile_two.link }}">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .tile_two.image }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+              <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_two.heading }}</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="columns tiles">
+        <div class="column is-5">
+          <a href="{{ .tile_three.link }}">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .tile_three.image }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+              <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_three.heading }}</h4>
+            </div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{{ .tile_four.link }}">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .tile_four.image }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+              <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_four.heading }}</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+
+
+{{ end }}
+</div>
 {{ partial "global/footer" . }}

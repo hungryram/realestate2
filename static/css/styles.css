@@ -1,5 +1,9 @@
 /* GLOBAL */
 
+div.home-section div.section:nth-child(odd){
+  background:#F7F7F7;
+}
+
 body h1.subtitle,
 body h2.subtitle,
 body h3.subtitle,
@@ -166,8 +170,18 @@ a.hero-button:hover:before {
     width: 100%;
   }
   
-  /* Text Animation End **/
+/* Text Animation End **/
 
+/* NAVBAR */
+
+nav.nav-wrap {
+  position: relative;
+  z-index: 1000;
+}
+
+a.navbar-item img {
+  max-height: 3.75rem;
+}
 
 /* AGENT LIST */
 
@@ -201,11 +215,20 @@ ul.sidebar-category li {
 
 /* FEATURED BOX HOME */
 
-div.featured {
+div.featured,
+div.tiles .column {
   transition: 3s;
 }
 
-div.featured:hover {
+div.featured:hover,
+div.tiles .column:hover {
   opacity: .8;
   transition: .3s;
+}
+
+/* TEXT AND CONTACT FORM */
+
+div.text-form {
+  background: #F2F2F3;
+  padding: 40px;
 }

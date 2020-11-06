@@ -3,7 +3,7 @@
 {{ $navContact := .Site.Data.profile.contact_information }}
 <!-- Hero head: will stick at the top -->
 <nav class="nav-wrap">
-<div class="nav-topbar pt-1 pb-1" style="{{ safeHTMLAttr (printf "background-color: %s" $navColor.top_header_color) }}">
+<div class="nav-topbar pt-1 pb-1" style="background:{{ if $navColor.top_header_color }}{{ $navColor.top_header_color }}{{ else }}transparent{{ end }}">
   <div class="container">
     <div class="has-text-right">
       <p><a href="mailto:{{ $navContact.email }}" class="{{ if $navColor.enable_white_text }}has-text-white{{ else }}has-text-black{{ end }} is-size-6" style="display:flex;align-items:center">
@@ -15,12 +15,12 @@
     </div>
   </div>
 </div>
- <div class="hero-head pt-4 pb-4">
-    <nav class="navbar">
+ <div class="hero-head pt-4 pb-4" style="background:{{ if $navColor.header_background_color }}{{ $navColor.header_background_color }}{{ else }}transparent{{ end }}">
+    <nav class="navbar is-transparent">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ .Site.BaseURL }}">
-            {{ if .Site.Data.design.logo_and_title.logo }}
+            {{ if .Site.Data.appearance.branding.logo }}
               <img src="{{ $navbar.logo | absURL }}" alt="{{ $navbar.site_title }}">
             {{ else }}
             <h1 class="title is-3{{ if $navColor.enable_white_text }} has-text-white{{ end }}">{{ $navbar.site_title }}</h1>

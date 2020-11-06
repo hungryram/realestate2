@@ -1,7 +1,7 @@
 {{ partial "global/navbar.html" . }}
 <div class="home-slide">
 {{ range .Site.Data.homelayout.slideshow }}
-<section class="hero lax" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url({{ .image }});height:100vh;background-size:cover;background-position:center" data-lax-bg-pos-y="0 0, vh 200 500">
+<section class="hero lax is-fullheight-with-navbar" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url({{ .image }});height:100vh;background-size:cover;background-position:center;display:flex;margin-top:-148px" data-lax-bg-pos-y="0 0, vh 200 500">
   <!-- Hero head: will stick at the top -->
 
 
@@ -30,8 +30,8 @@
           <p>Or use our <a href="http://wallstrealty.idxhome.com/listing/search/advanced/{{ $.Site.Data.idx.ihomefinder_client_id }}">advanced search feature</a></p>
         </div>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
 
 </section>
 {{ end }}

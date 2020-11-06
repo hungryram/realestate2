@@ -22,7 +22,6 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - list-content
   - property
 - type: directory
   path: content

@@ -25,3 +25,5 @@ fields:
   config:
     required: false
   label: Complete Subdomain
+pages:
+- data/idx.yaml

@@ -13,6 +13,10 @@ sections:
 - type: document
   path: data/homelayout.yml
   label: Home Layout
+- type: document
+  path: data/idx.yaml
+  label: IDX
+  match: "**/*"
 - type: directory
   path: content
   label: Pages

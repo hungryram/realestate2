@@ -15,7 +15,7 @@ fields:
   label: City
 - name: state
   type: select
-  default: []
+  default: ''
   config:
     required: false
     options:
@@ -83,7 +83,7 @@ fields:
 - name: short_description
   type: text
   config:
-    required: true
+    required: false
     max: 30
   label: Short Title
   description: 'Example: Luxury Listing'
@@ -108,10 +108,19 @@ fields:
       file: 
       path: 
   label: Property Status
-- name: featured_listing
-  type: boolean
-  label: Featured Listing
-  description: Toggle to feature this listing
+- name: featured
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Featured
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Featured
 - name: weight
   type: number
   label: Price
@@ -122,7 +131,7 @@ fields:
     min: 0
     max: 
     step: 
-    required: true
+    required: false
 - name: property
   type: select
   default: []
@@ -163,7 +172,7 @@ fields:
       options: []
       source:
         type: pages
-        section: teams
+        section: my-team
         file: 
         path: 
     label: Listing Agent
@@ -419,14 +428,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: main_photo
-    type: file
-    config:
-      maxSize: 5
-    label: Main Photo
-    default: "/uploads/main-house-photo.jpg"
-    description: Photos that are larger in size will take time to upload. We recommend
-      using optimized photos.
   - name: gallery
     type: image_gallery
     config: {}
@@ -462,7 +463,7 @@ fields:
     config:
       required: false
     label: Open House Date
-    default: No Open House Available
+    default: ''
   - name: open_house_details
     type: textarea
     default: ''

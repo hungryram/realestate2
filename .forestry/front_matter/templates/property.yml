@@ -80,7 +80,7 @@ fields:
   config:
     required: false
   label: Zip Code
-- name: short_description
+- name: short_title
   type: text
   config:
     required: false

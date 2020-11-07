@@ -85,3 +85,25 @@ jQuery(document).ready(function ($) {
           ]
                 });
       });
+
+// SINGLE LISTING SLIDER
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  autoplay: true,
+  adaptiveHeight: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+// LIGHTBOX
+$('.slider-for').slickLightbox();

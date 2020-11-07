@@ -28,11 +28,11 @@ gallery = ["/uploads/main.jpg", "/uploads/luxkitchen.jpg", "/uploads/luxbackyard
 meta_description = ""
 title_tag = ""
 [tools]
-file_attachments = []
+file_attachments = ["dfdf"]
 matterport_link = "https://my.matterport.com/show/?m=zEWsxhZpGba"
 open_house_date = "Monday April 20th, 2020"
 open_house_details = "Free cookies!"
-youtube_link = "0FoyamhXjIk"
+youtube_link = "_HgzMhQTpOA"
 [utilities_and_features.community_features]
 additional_community_details = []
 community_features_choice = []

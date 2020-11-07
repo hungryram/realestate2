@@ -1,26 +1,37 @@
 {{ define "main" }}
-<div class="inner-container">
-    <div class="columns is-multiline">
-        {{ range .Params.testimonials }}
-        <div class="column is-full">
-            <div class="testimonial box">
-                <div class="card-content">
-                  <div class="content">
-                    <p>{{ .testimonial }}</p>
+<div class="section">
+  <div class="container">
+      <div class="columns is-variable is-8">
+          <div class="column is-8">
+              <main>
+                <div class="inner-container">
+                  <div class="columns is-multiline">
+                      {{ range .Params.testimonials }}
+                      <div class="column is-full">
+                          <div class="testimonial box">
+                              <div class="card-content">
+                                <div class="content">
+                                  <p>{{ .testimonial }}</p>
+                                </div>
+                                <div class="media">
+                                  <div class="media-left">
+                                      {{ if .image }}<img src="/assets/user.svg" alt="{{ .name }}">{{ end }}
+                                  </div>
+                                  <div class="media-content">
+                                    <em>{{ .name }}</em>
+                                    <em class="is-block">{{ .date }}</em>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      {{ end }}
                   </div>
-                  <div class="media">
-                    <div class="media-left">
-                        {{ if .image }}<img src="/assets/user.svg" alt="{{ .name }}">{{ end }}
-                    </div>
-                    <div class="media-content">
-                      <em>{{ .name }}</em>
-                      <em class="is-block">{{ .date }}</em>
-                    </div>
-                  </div>
-                </div>
               </div>
-        </div>
-        {{ end }}
-    </div>
+              </main>
+          </div>
+              {{ partial "templates/sidebar" . }}
+      </div>
+  </div>
 </div>
 {{ end }}

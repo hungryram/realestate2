@@ -21,16 +21,16 @@ year_built = "2018"
 [listing_agent]
 listing_agent = "our-team/matt-deem.md"
 [photos]
-gallery = []
+gallery = ["/uploads/main.jpg", "/uploads/luxkitchen.jpg", "/uploads/luxbackyard1.jpg", "/uploads/luxbackyard.jpg"]
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""
 [tools]
 file_attachments = []
-matterport_link = ""
-open_house_date = ""
-open_house_details = ""
-youtube_link = ""
+matterport_link = "https://my.matterport.com/show/?m=zEWsxhZpGba"
+open_house_date = "Monday April 20th, 2020"
+open_house_details = "Free cookies!"
+youtube_link = "0FoyamhXjIk"
 [utilities_and_features.community_features]
 additional_community_details = []
 community_features_choice = []
@@ -48,3 +48,6 @@ interior_rooms = []
 show_interior_details = false
 
 +++
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.

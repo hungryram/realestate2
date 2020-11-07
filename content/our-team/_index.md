@@ -2,6 +2,6 @@
 title = "Our Team"
 [menu.main]
 name = "Team"
-weight = 3
+weight = 4
 
 +++

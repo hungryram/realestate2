@@ -26,7 +26,9 @@ sidebar:
     blog_categories: ''
   - template: latest-posts
     latest_posts: ''
+  single_property_sidebar: false
 colors:
   button_background_color: "#0073E1"
   button_text_color: "#FFFFFF"
   links: "#EBBA7C"
+  accent: "#2EC8F7"

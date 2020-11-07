@@ -144,6 +144,11 @@ fields:
       min: 
       max: 
     label: Sidebar
+  - name: single_property_sidebar
+    type: boolean
+    label: Single Property Sidebar
+    default: true
+    hidden: true
   label: Sidebar
 pages:
 - data/appearance.yml

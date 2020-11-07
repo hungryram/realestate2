@@ -494,5 +494,10 @@ fields:
   config: {}
   template: url
   label: URL
+- name: single_property_sidebar
+  type: boolean
+  label: Single Property Sidebar
+  hidden: true
+  default: true
 pages:
 - content/listings/110-york-drive.md

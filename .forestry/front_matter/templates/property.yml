@@ -209,7 +209,6 @@ fields:
   - name: hoa
     type: text
     label: HOA
-    description: Enter 0 if none.
   - name: garage
     type: text
     label: Garage

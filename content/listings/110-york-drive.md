@@ -43,11 +43,11 @@ exterior_details = []
 exterior_roof = []
 show_exterior_details = false
 [utilities_and_features.interior_details]
-additional_interior_details = []
-interior_appliances = []
-interior_flooring = []
-interior_rooms = []
-show_interior_details = false
+additional_interior_details = ["Tiles", "Baths"]
+interior_appliances = ["Water Heater"]
+interior_flooring = ["Hardwood"]
+interior_rooms = ["Recreation Room", "Office", "Master Bath", "Family Room"]
+show_interior_details = true
 
 +++
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia consectetur veritatis corporis facilis commodi aliquam officiis, fugiat eum harum quam perferendis quas dolor sunt numquam sapiente suscipit, labore expedita! Sapiente.

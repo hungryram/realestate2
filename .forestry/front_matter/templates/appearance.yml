@@ -45,6 +45,12 @@ fields:
     config:
       required: false
       color_format: Hex
+  - name: accent
+    type: color
+    label: Accent
+    config:
+      required: false
+      color_format: Hex
   label: Colors
 - name: header
   type: field_group

@@ -1,5 +1,5 @@
 +++
-city = "Corona"
+city = "Riverside"
 featured = "Featured"
 property = "Mobile Home"
 short_description = "Luxury Listing"

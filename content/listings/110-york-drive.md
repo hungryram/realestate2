@@ -1,6 +1,7 @@
 +++
 city = "Riverside"
 featured = "Featured"
+price = "$2300/mo"
 property = "Mobile Home"
 short_description = "Luxury Listing"
 short_title = "Luxury Listing"

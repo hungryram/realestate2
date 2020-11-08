@@ -87,6 +87,11 @@ fields:
     max: 30
   label: Short Title
   description: 'Example: Luxury Listing'
+- name: price
+  type: text
+  config:
+    required: false
+  label: Price
 - name: status
   type: select
   default: ''
@@ -121,17 +126,6 @@ fields:
       file: 
       path: 
   label: Featured
-- name: weight
-  type: number
-  label: Price
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 0
-    max: 
-    step: 
-    required: false
 - name: property
   type: select
   default: []

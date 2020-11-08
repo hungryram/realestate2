@@ -1,13 +1,14 @@
 +++
 city = "Bloomington"
 featured = "Featured"
+price = "$350,000"
 property = "Townhome"
 short_title = "Modern Home"
 state = "California"
 status = "Pending"
 title = "419 Abbot Dr"
 url = ""
-weight = 651225
+weight = "651225"
 zip = "61704"
 [details]
 bathrooms = "2"

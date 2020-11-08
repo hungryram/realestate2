@@ -9,7 +9,6 @@ state = "Alabama"
 status = "Active"
 title = "54 Vincent Rd. york"
 url = ""
-weight = "200000"
 zip = "95826"
 [details]
 bathrooms = "1"

@@ -29,7 +29,7 @@
                                         <div class="level-right">
                                             <div class="level-item">
                                                 <div>
-                                                    <h4 class="title is-5">${{ lang.NumFmt 0 .Params.weight }}</h4>
+                                                    <h4 class="title is-5">{{ .Params.price }}</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -122,7 +122,7 @@
                                     {{ with .Params.property }}<li><strong>Property type</strong><span>{{ . }}</span></li>{{ end }}
                                     {{ with .Params.details.mls_number }}<li><strong>Property ID</strong><span>{{ . }}</span></li>{{ end }}
                                     {{ with .Params.status }}<li><strong>Status</strong><span>{{ . }}</span></li>{{ end }}
-                                    {{ with lang.NumFmt 0 .Params.weight }}<li><strong>Price</strong><span>${{ . }}</span></li>{{ end }}
+                                    {{ with .Params.price }}<li><strong>Price</strong><span>{{ . }}</span></li>{{ end }}
                                     {{ with .Params.details.bedrooms }}<li><strong>Bedrooms</strong><span>{{ . }}</span></li>{{ end }}
                                     {{ with .Params.details.bathrooms }}<li><strong>Bathrooms</strong><span>{{ . }}</span></li>{{ end }}
                                     {{ with .Params.details.garage }}<li><strong>Garage</strong><span>{{ . }}</span></li>{{ end }}

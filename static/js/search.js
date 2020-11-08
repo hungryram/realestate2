@@ -12,17 +12,24 @@ var fuseOptions = {
     {name:"title",weight:0.8},
     {name:"contents",weight:0.5},
     {name:"tags",weight:0.3},
-    {name:"categories",weight:0.3}
-  ]
+    {name:"categories",weight:0.3},
+    {name:"state",weight:0.3},
+    {name:"city",weight:0.3},
+    {name:"zip",weight:0.3},
+    {name:"mls",weight:0.3},
+    ]
 };
+
 
 var searchQuery = param("s");
 if(searchQuery){
   $("#search-query").val(searchQuery);
   executeSearch(searchQuery);
 }else {
-  $('#search-results').append("<p>Please enter a word or phrase above</p>");
+  $('#search-results').append("<p>Please search by address, zip, state, city, or MLS number</p>");
 }
+
+
 
 function executeSearch(searchQuery){
   $.getJSON( "/index.json", function( data ) {
@@ -62,10 +69,10 @@ function populateResults(result){
     if(snippet.length<1){
       snippet += contents.substring(0,summaryInclude*2);
     }
-    //pull template from hugo templarte definition
+    //pull template from hugo template definition
     var templateDefinition = $('#search-result-template').html();
     //replace values
-    var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,tags:value.item.tags,categories:value.item.categories,snippet:snippet});
+    var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,status:value.item.status,bed:value.item.bed,tags:value.item.tags,image:value.item.image[0],categories:value.item.categories,price:value.item.price,bath:value.item.bath,square:value.item.square,garage:value.item.garage,featured:value.item.featured,state:value.item.state,city:value.item.city,zip:value.item.zip,mls:value.item.mls,shorttitle:value.item.shorttitle,property:value.item.property,snippet:snippet});
     $('#search-results').append(output);
 
     $.each(snippetHighlights,function(snipkey,snipvalue){
@@ -103,3 +110,4 @@ function render(templateString, data) {
   }
   return templateString;
 }
+

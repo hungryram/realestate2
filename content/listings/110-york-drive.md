@@ -10,7 +10,6 @@ state = "Alabama"
 status = "Active"
 title = "110 York Drive"
 url = ""
-weight = 3900000
 zip = "95855"
 [details]
 bathrooms = "2"

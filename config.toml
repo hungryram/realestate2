@@ -7,3 +7,12 @@ url = "/"
 weight = 1
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+[taxonomies]
+category = "categories"
+city = "city"
+property = "property"
+state = "state"
+status = "status"
+tag = "tags"
+zip = "zip"
+featured = "featured"

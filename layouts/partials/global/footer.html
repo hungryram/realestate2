@@ -60,6 +60,11 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
 <script src="{{.Site.BaseURL}}/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="{{ "js/search.js" | absURL }}"></script>
+
 <script>
     // COLORS
     // LINK
@@ -70,12 +75,12 @@
     accent.style.backgroundColor = '{{ .Site.Data.appearance.colors.accent }}';
     });
     // PRIMARY BUTTON
-    document.querySelectorAll(".primary-btn").forEach(function(bg) {
+    document.querySelectorAll(".btn-primary").forEach(function(bg) {
     bg.style.backgroundColor = '{{ .Site.Data.appearance.colors.button_background_color }}';
     });
 
     //PRIMARY BUTTON TEXT
-    document.querySelectorAll("a.primary-btn").forEach(function(color) {
+    document.querySelectorAll(".btn-primary").forEach(function(color) {
     color.style.color = '{{ .Site.Data.appearance.colors.button_text_color }}';
     });
 

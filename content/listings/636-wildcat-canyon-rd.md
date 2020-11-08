@@ -8,7 +8,6 @@ state = "California"
 status = "Pending"
 title = "419 Abbot Dr"
 url = ""
-weight = "651225"
 zip = "61704"
 [details]
 bathrooms = "2"

@@ -1,5 +1,10 @@
 /* GLOBAL */
 
+mark {
+  background:transparent;
+  color: inherit;
+}
+
 div.home-section div.section:nth-child(odd){
   background:#F7F8F9;
 }
@@ -72,7 +77,7 @@ div.summary-card p {
   text-decoration: underline;
 }
 
-.primary-btn {
+.btn-primary {
   padding: 10px 20px;
   transition: .3s;
   border-radius: 3px;
@@ -84,7 +89,7 @@ button.button {
   padding: 10px 20px;
 }
 
-a.primary-btn:hover,
+a.btn-primary:hover,
 button.button:hover {
   transition: .3s;
   border: 1px solid #ccc;
@@ -96,6 +101,13 @@ ul.social-block li {
   list-style: none;
   display: inline;
   padding: 5px;
+}
+
+/* SEARCH */
+
+input#search-query::placeholder {
+  font-size: 14px;
+  color: rgb(155, 155, 155);
 }
 
 /* HERO */
@@ -227,6 +239,10 @@ div.property-grid span {
   color: #242429;
 }
 
+div.property-grid span.grid-address {
+  font-size: 14px;
+}
+
 .level.tag-wrapper {
   position: absolute;
   top: 0;
@@ -259,6 +275,19 @@ div.level-item span.status {
   padding: 4px 10px;
   border-radius: 5px;
   color: #fff;
+  margin: 2px;
+}
+
+div.level-item span.featured {
+  background: #f1b425;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin: 2px;
+  color: #fff;
+}
+
+span.featured:empty {
+  display: none;
 }
 
 div.level-item span.grid-price {

@@ -8,12 +8,12 @@ fields:
     required: true
   label: Address
   description: Enter the address as the title
-- name: city
+- name: cities
   type: text
   config:
     required: false
   label: City
-- name: state
+- name: states
   type: select
   default: ''
   config:
@@ -75,7 +75,7 @@ fields:
       file: 
       path: 
   label: State
-- name: zip
+- name: zip-codes
   type: text
   config:
     required: false
@@ -126,7 +126,7 @@ fields:
       file: 
       path: 
   label: Featured
-- name: property
+- name: properties
   type: select
   default: []
   config:

@@ -1,6 +1,7 @@
 +++
 city = "Riverside"
 featured = ""
+price = "$300,000"
 property = "Commercial"
 short_title = "Elegant Home"
 single_property_sidebar = true
@@ -8,7 +9,7 @@ state = "Alabama"
 status = "Active"
 title = "54 Vincent Rd. york"
 url = ""
-weight = 200000
+weight = "200000"
 zip = "95826"
 [details]
 bathrooms = "1"

@@ -30,7 +30,7 @@
               <span class="short-title">{{ .Params.short_title }}</span>
             </div>
             <div class="is-block">
-              <span class="grid-address">{{ .Title }}, {{ .Params.city }}, {{ .Params.state }} {{ .Params.zip }}</span>
+              <span class="grid-address">{{ .Title }}, {{ .Params.cities }}, {{ .Params.states }} {{ index .Params "zip-codes" }}</span>
             </div>
           </div>
         </div>

@@ -1,17 +1,13 @@
 +++
 cities = "CORONA"
-city = "Bloomington"
 featured = "Featured"
 price = "$350,000"
 properties = "Condo"
-property = "Townhome"
 short_title = "Modern Home"
-state = "California"
 states = "California"
 status = "Pending"
 title = "429 Abbot Dr"
 url = ""
-zip = "61704"
 zip-codes = "92882"
 [details]
 bathrooms = "2"

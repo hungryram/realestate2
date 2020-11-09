@@ -3,6 +3,8 @@
 <div class="section">
   <div class="container">
       <div class="columns is-variable is-8">
+        {{ partial "templates/search" . }}
+
           <div class="column is-8">
               <main>
                   {{ $listCount := len (where .Site.RegularPages "Section" "==" "listings")  }}
@@ -20,7 +22,6 @@
                   {{ end }}
               </main>
           </div>
-          {{ partial "templates/search" . }}
 
       </div>
   </div>

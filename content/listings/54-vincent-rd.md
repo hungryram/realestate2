@@ -1,18 +1,14 @@
 +++
 cities = "Bloomington"
-city = "Riverside"
 featured = ""
 price = "$300,000"
 properties = "Cabin"
-property = "Commercial"
 short_title = "Elegant Home"
 single_property_sidebar = true
-state = "Alabama"
 states = "Alaska"
 status = "Active"
 title = "54 Vincent Rd. york"
 url = ""
-zip = "95826"
 zip-codes = "61704"
 [details]
 bathrooms = "1"

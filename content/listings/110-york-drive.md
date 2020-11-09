@@ -1,19 +1,15 @@
 +++
 cities = "Yorba Linda"
-city = "Riverside"
 featured = "Featured"
 price = "$2300/mo"
 properties = "Farmland"
-property = "Mobile Home"
 short_description = "Luxury Listing"
 short_title = "Luxury Listing"
 single_property_sidebar = true
-state = "Alabama"
 states = "California"
 status = "Active"
 title = "110 York Drive"
 url = ""
-zip = "95855"
 zip-codes = "92886"
 [details]
 bathrooms = "2"

@@ -10,6 +10,7 @@
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
                 {{ if .Site.Data.idx.enable_idx }}
+                
                 <form action="https://karinacrisp.idxhome.com/valuation/{{ .Site.Data.idx.ihomefinder_client_id }}" class="form-horizontal" data-ihf-event="valuation-request-form-submit" data-ihf-event-bound="true" id="ihf-valuation-request-form" method="post" name="ihf-valuation-request-form">
                 {{ else }}
                 <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-page">

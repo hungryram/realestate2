@@ -7,9 +7,10 @@ fields:
   config:
     required: false
   label: Heading
+  default: Our Team
 - name: body
   type: textarea
-  default: ''
+  default: Let our team of professionals help you.
   config:
     required: false
     wysiwyg: true

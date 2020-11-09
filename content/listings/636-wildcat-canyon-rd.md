@@ -1,5 +1,7 @@
 +++
 cities = "CORONA"
+city = "Bloomington"
+date = "05/28/2020"
 featured = "Featured"
 price = "$350,000"
 properties = "Condo"

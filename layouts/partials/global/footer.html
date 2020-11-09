@@ -1,7 +1,7 @@
 {{ $footer := .Site.Data.appearance.footer }}
 {{ $footerContact := .Site.Data.profile }}
 {{ $footerSocial := .Site.Data.profile.social_media }}
-<footer class="footer pb-0" {{ if $footer.footer_background_color }}style="{{ safeHTMLAttr (printf "background-color: %s" $footer.footer_background_color) }}"{{ else }}style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ $footer.background_image }}) no-repeat center;"{{ end }}>
+<footer class="footer pb-0" style="background:{{ if $footer.background_image }}linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url({{ $.Site.Params.cloudinary_url }}{{ $footer.background_image }}) no-repeat center;{{ else }}background:{{ $footer.footer_background_color }}{{ end }}">
     <div class="section">
         <div class="container">
             <div class="columns is-variable is-8">

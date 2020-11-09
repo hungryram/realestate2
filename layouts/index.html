@@ -165,7 +165,7 @@
       <div class="columns is-vcentered">
         {{ if .image }}
         <div class="column has-text-centered">
-          <img src="{{ .image }}" alt="{{ .image_alt_tag }}" width="{{ .image_width }}">
+          <img src="{{ $.Site.Params.cloudinary_url }}{{ .image }}" alt="{{ .image_alt_tag }}" width="{{ .image_width }}">
         </div>
         {{ end }}
         <div class="column content{{ if .image }}{{ else }} has-text-centered is-half is-offset-one-quarter{{ end }}">

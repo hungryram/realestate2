@@ -8,10 +8,10 @@ email = "conner@hungryram.com"
 fax = ""
 phone = "897-463-6754"
 [details]
-agent_photo = ""
+agent_photo = "/v1604961525/man-in-white-dress-shirt-holding-suit-jacket-1043474_ti3nbr.jpg"
 languages = []
 license_number = ""
-license_type = []
+license_type = ""
 office = []
 specialty = []
 title = ""

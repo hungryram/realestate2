@@ -32,16 +32,6 @@ fields:
   - name: enable_white_text
     type: boolean
     label: Enable White Text
-  - name: link
-    type: text
-    config:
-      required: false
-    label: Link
-  - name: link_label
-    type: text
-    config:
-      required: false
-    label: Link Label
   config:
     min: 
     max: 

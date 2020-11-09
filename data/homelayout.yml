@@ -26,8 +26,8 @@ home_sections:
   image_alt_tag: John
   image_width: '400'
 - template: active-listings
-  heading: ''
-  body: ''
+  heading: Active Listings
+  body: View listings that are active within the MLS
 - template: home-testimonial
   heading: Heading
   body: ''

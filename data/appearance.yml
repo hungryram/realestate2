@@ -4,15 +4,15 @@ footer:
     pages: []
   footer_background_color: "#232733"
   background_image: ''
-  logo: ""
+  logo: ''
   footer_bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eveniet!
     Officia repellendus aliquam necessitatibus iure, porro voluptas magnam laboriosam
     nesciunt
   enable_black_text: false
 branding:
   site_title: Real Estate
-  logo: "/uploads/cropped-logotrans.png"
-  favicon: "/uploads/cropped-logotrans.png"
+  logo: ''
+  favicon: ''
 header:
   top_header_color: "#707984"
   header_background_color: "#0B1723"

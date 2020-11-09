@@ -34,6 +34,9 @@ home_sections:
 - template: rental-listings
   heading: Rental Listings
   body: View rental listings in the office
+- template: auction-listings
+  heading: Auction Listings
+  body: View auction listings
 - template: home-testimonial
   heading: Heading
   body: ''

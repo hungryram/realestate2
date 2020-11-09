@@ -1,13 +1,13 @@
 +++
 cities = "CORONA"
 city = "Bloomington"
-date = "05/28/2020"
+date = 2019-09-10T00:00:00Z
 featured = "Featured"
 price = "$350,000"
 properties = "Condo"
 short_title = "Modern Home"
 states = "California"
-status = "Rent"
+status = "Sold"
 title = "429 Abbot Dr"
 url = ""
 zip-codes = "92882"

@@ -4,10 +4,10 @@ slideshow:
   subtitle: Website Subtitle
   link_label: Read More
   link: https://www.hungryram.com
-  image: ''
+  image: "/v1604948621/slider1_aoqyp9.jpg"
   body: Testing body background
   enable_white_text: true
-- image: ''
+- image: "/v1604948648/farmhousekitchen_uqzvqh.jpg"
   subtitle: my subtitle
   body: let our team help you
   enable_white_text: true
@@ -21,8 +21,8 @@ home_sections:
     phone or computer. Easily manage your website through our website editor customized
     specifically for real estate professionals.
   button: Read more
-  button_link: https://google.com
-  image: ''
+  button_link: "/teams"
+  image: "/v1604948665/agent-4_i3w6gg.jpg"
   image_alt_tag: John
   image_width: '400'
 - template: active-listings

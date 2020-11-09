@@ -154,6 +154,16 @@ fields:
       file: 
       path: 
   label: Property Type
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: 
+    display_utc: false
+    export_format: MM/DD/YYYY
+  description: Date of published listing or last modified.
 - name: listing_agent
   type: field_group
   config: {}

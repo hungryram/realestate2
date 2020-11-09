@@ -51,6 +51,10 @@ fields:
   type: blocks
   label: Home Sections
   template_types:
+  - active-listings
+  - sold-listings
+  - rental-listings
+  - featured-listings
   - home-testimonial
   - home-agent
   - featured-boxes
@@ -58,7 +62,6 @@ fields:
   - text-and-image
   - text-and-contact-form
   - tiles
-  - active-listings
   config:
     min: 
     max: 

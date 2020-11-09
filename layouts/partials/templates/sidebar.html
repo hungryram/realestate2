@@ -2,11 +2,11 @@
     {{ range .Site.Data.appearance.sidebar.sidebar }}
     {{ if eq "side-blog-category" .template }}
     <div class="pt-6 pb-6">
-        <h4 class="title is-6">Blog Category</h4>
+        <h4 class="title is-6">Blog Categories</h4>
         <ul class="sidebar-category">
             {{ range $name, $taxonomy := $.Site.Taxonomies.categories }}
-          <li>
-            <a href="/categories{{ $name | urlize | relURL }}" class="secondary"><span style="font-size:14px;margin-right:10px">&#9654;</span> {{ $name | humanize }}</a>
+          <li class="align-center">
+            <img src="/assets/caret-right.svg" alt="" width="20"> <a href="/categories{{ $name | urlize | relURL }}" class="has-text-black has-text-weight-light">{{ $name | humanize }}</a>
           </li>
           {{else}}
           <p>No blog categories just yet</p>
@@ -38,6 +38,7 @@
         {{ end }}
     </div>
     {{ end }}
+
   {{ end }}
 </div>
 

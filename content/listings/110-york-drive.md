@@ -1,6 +1,7 @@
 +++
 cities = "Yorba Linda"
 city = "Riverside"
+date = 2020-01-10T00:00:00Z
 featured = "Featured"
 price = "$2300/mo"
 properties = "Farmland"

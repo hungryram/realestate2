@@ -55,6 +55,7 @@ fields:
   - sold-listings
   - rental-listings
   - featured-listings
+  - auction-listings
   - home-testimonial
   - home-agent
   - featured-boxes

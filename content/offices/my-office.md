@@ -10,7 +10,7 @@ office_phone = "7142623501"
 state = "Alabama"
 zip_code = 92882
 [photos]
-photo = "/uploads/group-of-people-sitting-indoors-3184360.jpg"
+photo = ""
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

@@ -5,6 +5,8 @@ summaryLength = 20
 name = "Home"
 url = "/"
 weight = 1
+[params]
+cloudinary_url = "https://res.cloudinary.com/realestate2/image/upload"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [taxonomies]

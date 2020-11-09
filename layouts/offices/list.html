@@ -15,7 +15,11 @@
                                 <div class="card">
                                     <div class="columns is-vcentered is-variable is-3">
                                         <div class="column is-4 pb-0 pt-0">
+                                            {{ if .Params.photos.photo }}
                                             <img src="{{ .Params.photos.photo }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                                            {{ else }}
+                                              <img src="/assets/nohouse.jpg" alt="no house" style="object-fit: cover;">
+                                            {{ end }}
                                         </div>
                                         <div class="column">
                                             <div class="content pr-6 pl-6">
@@ -84,8 +88,8 @@
                                 </div>
                             </div>
                             {{ end }}
-                            {{ partial "templates/pagination" . }}
                         </div>
+                        {{ partial "templates/pagination" . }}
                     </div>
                     {{ else }}
                     <div class="inner-container">

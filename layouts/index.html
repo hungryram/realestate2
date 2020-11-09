@@ -63,14 +63,18 @@
           </div>
         </div>
         <div class="agent-container">
-          <div class="responsive-slide">
+          <div class="team-slide">
         {{ if gt $agents 0 }}
           {{ range where $.Site.RegularPages "Type" "our-team" }}
             <a href="{{ .Permalink }}">
               <div class="card ml-2 mr-2 mb-4">
                 <div class="card-image">
                   <figure class="image is-square">
+                    {{ if .Params.photos.agent_photo }}
                     <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="object-fit: cover;width:100%">
+                    {{ else }}
+                    <img src="/assets/user.jpg" alt="">
+                    {{ end }}
                   </figure>
                 </div>
                 <div class="card-content">
@@ -120,7 +124,11 @@
             <div class="card">
                 <div class="columns is-vcentered is-variable is-3">
                     <div class="column pb-0 pt-0">
+                      {{ if .Params.featured_image }}
                         <img src="{{ .Params.featured_image }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                      {{ else }}
+                      <img src="/assets/nophoto.jpg" alt="no photo" style="width:100%;height:250px;object-fit:cover">
+                      {{ end }}
                     </div>
                     <div class="column">
                         <div class="content pr-4 pl-2">
@@ -160,9 +168,9 @@
           <img src="{{ .image }}" alt="{{ .image_alt_tag }}" width="{{ .image_width }}">
         </div>
         {{ end }}
-        <div class="column content">
+        <div class="column content{{ if .image }}{{ else }} has-text-centered is-half is-offset-one-quarter{{ end }}">
           <div class="is-block">
-            <h2 class="title is-4">{{ .heading }}</h2>
+            <h2 class="title is-4{{ if .image }}{{ else }} has-text-centered{{ end }}">{{ .heading }}</h2>
             <p>{{ .body | markdownify }}</p>
           </div>
           <div class="is-block mt-5">
@@ -312,7 +320,7 @@
       <div class="columns tiles">
         <div class="column is-7">
           <a href="{{ .tile_one.link }}">
-            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .tile_one.image }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_one.image }}{{ .tile_one.image }}{{ else }}/assets/background/featuredone.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
               <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_one.heading }}</h4>
             </div>
           </a>

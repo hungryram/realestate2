@@ -8,7 +8,7 @@ email = "james@gmail.com"
 fax = "310-522-9854"
 phone = "555-555-5555"
 [details]
-agent_photo = "/uploads/66072_admin_79223_agent_louis-headshot.jpg"
+agent_photo = ""
 languages = ["Spanish", "English"]
 license_number = "40905442"
 license_type = "BRE License"

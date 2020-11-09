@@ -20,11 +20,13 @@
         <h4 class="title is-6">Latest Posts</h4>
         {{ range  first 4 ( where $.Site.RegularPages "Type" "blog") }}
         <a href="{{ .Permalink }}">
-            <article class="media">
-                {{ if .Params.featured_image }}
+            <article class="media mb-5">
+                {{ if $.Params.featured_image }}
                 <div class="media-left">
                   <figure class="image is-96x96">
+                    {{ if $.Params.featured_image }}
                     <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+                    {{ end }}
                   </figure>
                 </div>
                 {{end}}

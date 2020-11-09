@@ -8,6 +8,8 @@
                         <div class="content">
                             {{ if .Params.featured_image }}
                             <img src="{{ .Params.featured_image }}" alt="{{ .Params.alt_tag }}" class="mb-6">
+                            {{ else }}
+                            <img src="/assets/nophoto.jpg" alt="no photo">
                             {{ end }}
                             {{ .Content }}
                         </div>

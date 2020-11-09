@@ -9,13 +9,17 @@
                     {{ if gt $agentCount 0 }}
                     <div class="inner-container">
                         <div class="columns is-multiline">
-                            {{ $paginator := .Paginate (where .Pages "Type" "our-team") 5 }}
+                            {{ $paginator := .Paginate (where .Pages "Type" "our-team") 10 }}
                             {{ range $paginator.Pages.ByWeight }}
                             <div class="column is-full agent-container mb-4">
                                 <div class="card">
                                     <div class="columns is-vcentered is-variable is-3">
                                         <div class="column is-4 pb-0 pt-0">
+                                            {{ if .Params.details.agent_photo }}
                                             <img src="{{ .Params.details.agent_photo }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                                            {{ else }}
+                                            <img src="/assets/user.jpg" alt="use icon">
+                                            {{ end }}
                                         </div>
                                         <div class="column">
                                             <div class="content pr-6 pl-6">
@@ -84,8 +88,9 @@
                                 </div>
                             </div>
                             {{ end }}
-                            {{ partial "templates/pagination" . }}
                         </div>
+                        {{ partial "templates/pagination" . }}
+
                     </div>
                     {{ else }}
                     <div class="inner-container">

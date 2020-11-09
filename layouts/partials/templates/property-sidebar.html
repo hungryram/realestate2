@@ -6,7 +6,11 @@
             <div class="columns is-variable is-3">
                 <div class="column is-6 has-text-centered">
                     <div>
+                        {{ if .Params.details.agent_photo }}
                         <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="width:80px;height:80px;border-radius:50%;object-fit:cover">
+                        {{ else }}
+                        <img src="/assets/user.jpg" alt="use icon" width="100" style="border-radius:50%;">
+                        {{ end }}
                     </div>
                 </div>
                 <div class="column">
@@ -18,7 +22,7 @@
             <footer class="card-footer">
                 {{ if .Params.contact.email }}<a href="mailto:{{ .Params.contact.email }}" class="card-footer-item">Email</a>{{ end }}
                 {{ if .Params.contact.cell }}<a href="tel:{{ .Params.contact.cell }}" class="card-footer-item">Call</a>{{ end }}
-                <a href="{{ .Permalink }}" class="card-footer-item">View</a>
+                <a href="{{ .Permalink }}" class="card-footer-item">Profile</a>
               </footer>
         </div>
         {{ end }}
@@ -49,18 +53,23 @@
         <h4 class="title is-6">Other Listings</h4>
         {{ range ( where $.Site.RegularPages "Type" "listings") }}
         <a href="{{ .Permalink }}">
-            <article class="media">
-                {{ if .Params.photos.gallery }}
+            <article class="media mb-5">
+                {{ if $.Params.photos.gallery }}
                 <div class="media-left">
                   <figure class="image is-96x96">
+                      {{ if .Params.photos.gallery }}
                     <img src="{{ index .Params.photos.gallery 0 }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <img src="/assets/nohouse.jpg" alt="">
+                    {{ end }}
                   </figure>
                 </div>
                 {{end}}
                 <div class="media-content">
-                  <div class="content">
+                  <div class="">
                       <h1 class="title is-6" style="margin: 0;">{{ .Params.title }}</h1>
-                      <p class="has-text-black">{{ .Params.price }}</p>
+                      {{ if $.Params.price }}<p class="has-text-black mx-0">{{ .Params.price }}</p>{{ end }}
+                      {{ if $.Params.properties }}<p class="has-text-black mx-0">{{ .Params.properties }}</p>{{ end }}
                 </div>
             </article>
         </a>

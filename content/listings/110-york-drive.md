@@ -25,7 +25,7 @@ year_built = "2018"
 [listing_agent]
 listing_agent = "our-team/matt-deem.md"
 [photos]
-gallery = ["/uploads/main.jpg", "/uploads/luxkitchen.jpg", "/uploads/luxbackyard1.jpg", "/uploads/luxbackyard.jpg"]
+gallery = []
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

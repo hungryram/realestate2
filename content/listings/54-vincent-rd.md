@@ -24,7 +24,7 @@ year_built = "2016"
 [listing_agent]
 listing_agent = "our-team/sarah-conner.md"
 [photos]
-gallery = ["/uploads/sidekix-media-l6u4gikvxbs-unsplash.jpg", "/uploads/shutterstock_608664209.jpg", "/uploads/shutterstock_570081934.jpg", "/uploads/powered.jpg", "/uploads/newluxurykitchen.jpg", "/uploads/francesca-tosolini-gu4r-0lwxvk-unsplash.jpg", "/uploads/derek-thomson-p50hcc0yrl0-unsplash.jpg"]
+gallery = []
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

@@ -8,6 +8,8 @@
                 <div class="column">
                     {{ if $footer.logo }}
                     <img src="{{ $footer.logo }}" alt="{{ .Site.Data.appearance.branding.site_title }}" width="150">
+                    {{ else }}
+                    <h1 class="title is-4 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.company_name }}</h1>
                     {{ end }}
                 </div>
                 <div class="column">

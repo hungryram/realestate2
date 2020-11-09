@@ -2,7 +2,7 @@
 author = []
 categories = ["Real Estate"]
 date = 2020-07-27T07:00:00Z
-featured_image = "/uploads/listings.JPG"
+featured_image = ""
 tags = []
 title = "Blog 5"
 url = ""

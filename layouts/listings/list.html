@@ -19,12 +19,14 @@
                                 </div>   
                             {{ end }}
                         </div>
+                        {{ partial "templates/pagination" . }}
                     </div>
                     {{ else }}
                     <div class="inner-container">
                         <h2 class="title is-4">No listing has been added</h2>
                     </div>
                     {{ end }}
+                    
                 </main>
             </div>
         </div>

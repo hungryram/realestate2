@@ -2,7 +2,11 @@
 <a href="{{ .Permalink }}">
 <div class="card-image">
     <figure class="image is-3by2 darkoverlay">
-      <img src="{{ index .Params.photos.gallery 0 }}" alt="{{ .Title }}">
+      {{ if .Params.gallery.photo }}
+      <img src="{{ index .Params.photos.gallery 0 }}" alt="{{ .Title }}" style="object-fit:cover">
+      {{ else }}
+      <img src="/assets/nohouse.jpg" alt="no house" style="object-fit: cover;">
+      {{ end }}
     </figure>
     <div class="level tag-wrapper is-mobile">
       <div class="level-left">
@@ -30,7 +34,10 @@
               <span class="short-title">{{ .Params.short_title }}</span>
             </div>
             <div class="is-block">
-              <span class="grid-address">{{ .Title }}, {{ .Params.cities }}, {{ .Params.states }} {{ index .Params "zip-codes" }}</span>
+              <span class="grid-address">{{ .Title }}</span>
+            </div>
+            <div class="is-block" style="margin-top:-12px">
+              <span class="grid-address">{{ .Params.cities }}, {{ .Params.states }} {{ index .Params "zip-codes" }}</span>
             </div>
           </div>
         </div>

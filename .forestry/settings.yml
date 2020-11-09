@@ -61,7 +61,6 @@ sections:
 - type: document
   path: content/contact/_index.md
   label: Contact
-  match: "**/*"
 - type: heading
   label: Developer Access
 - type: document

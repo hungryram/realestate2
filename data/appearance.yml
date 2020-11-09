@@ -24,7 +24,7 @@ header:
   enable_white_text: true
   enable_white_text_top: true
 pages:
-  image: "/uploads/clean-living-room.jpg"
+  image: "/v1604948756/mainimage_i5qltw.jpg"
 sidebar:
   sidebar:
   - template: side-blog-category

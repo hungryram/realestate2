@@ -4,10 +4,10 @@ slideshow:
   subtitle: Website Subtitle
   link_label: Read More
   link: https://www.hungryram.com
-  image: "/uploads/clean-living-room.jpg"
+  image: ''
   body: Testing body background
   enable_white_text: true
-- image: "/uploads/jared-rice-pibrawhb4h8-unsplash.jpg"
+- image: ''
   subtitle: my subtitle
   body: let our team help you
   enable_white_text: true
@@ -22,7 +22,7 @@ home_sections:
     specifically for real estate professionals.
   button: Read more
   button_link: https://google.com
-  image: "/uploads/agent-4.jpg"
+  image: ''
   image_alt_tag: John
   image_width: '400'
 - template: active-listings
@@ -33,14 +33,14 @@ home_sections:
   body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit
     non delectus eos, quas, dolorem alias '
   featured:
-  - image: "/uploads/livingroomandtv.jpg"
+  - image: ''
     link: "/la"
     heading: Los Angeles
   - heading: Whittier
-    image: "/uploads/newluxuryext.jpg"
+    image: ''
     link: "/whittier"
   - heading: Corona
-    image: "/uploads/clean-living-room.jpg"
+    image: ''
     link: "/corona"
 - template: home-agent
   heading: Our Team
@@ -49,31 +49,31 @@ home_sections:
   heading: We help you buy or sell your property quickly
   body: Engage with our professional real estate agents to sell, buy or rent your
     home. Get emails directly to your inbox and manage the lead as you wish.
-  background_image: "/uploads/jared-rice-pibrawhb4h8-unsplash.jpg"
+  background_image: ''
   form:
     heading: Send a message
     body: Engage with our professional real estate agents to sell, buy or rent your
       home. Get emails directly to your inbox and manage the lead as you wish.
-  background_color: ''
+  background_color: "#424242"
   enable_white_text: true
 - template: tiles
   heading: Featured Areas
   body: View our best homes
   tile_one:
     heading: Feature One
-    image: "/uploads/livingroom.jpg"
+    image: ''
     link: https://google.com
   tile_two:
     heading: Feature Two
-    image: "/uploads/group-of-people-sitting-indoors-3184360.jpg"
+    image: ''
     link: "/contact"
   tile_three:
     heading: Feature Three
-    image: "/uploads/clean-living-room.jpg"
+    image: ''
     link: "/contact"
   tile_four:
     heading: Feature Four
-    image: "/uploads/derek-thomson-p50hcc0yrl0-unsplash.jpg"
+    image: ''
     link: "/team"
 - template: home-blog
   heading: Our Blog

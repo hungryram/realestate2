@@ -29,12 +29,12 @@
                 </div>
                 <div class="column">
                     <h4 class="title is-6 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">Quick Links</h4>
-                    <ul>
-                        <li><a href="" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">Home</a></li>
-                        <li><a href="" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">Team</a></li>
-                        <li><a href="" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">Our Office</a></li>
-                        <li><a href="" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">Contact</a></li>
-                    </ul>
+                    <nav class="footer-nav">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.footer }}
+                        <a class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} footer-nav-item{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                        {{ end }}
+                    </nav>
                 </div>
             </div>
             <hr style="height:1px;background-color: #212121">
@@ -54,6 +54,13 @@
                   </ul>
                 </div>
               </div>
+              {{ if $footer.disclaimer }}
+              <div class="columns">
+                  <div class="column content has-text-centered">
+                      <p class="is-size-7 has-text-weight-light{{ if $footer.enable_black_text }} has-text-black{{ else }} has-text-white{{ end }}">{{ $footer.disclaimer }}</p>
+                  </div>
+              </div>
+              {{ end }}
         </div>
     </div>
 </footer>

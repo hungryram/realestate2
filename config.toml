@@ -1,6 +1,10 @@
 baseURL = "https://listings2.netlify.app/"
 languageCode = "en-us"
 summaryLength = 20
+[[menu.footer]]
+name = "Home"
+url = "/"
+weight = 1
 [[menu.main]]
 name = "Home"
 url = "/"

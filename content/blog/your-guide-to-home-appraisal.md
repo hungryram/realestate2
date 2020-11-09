@@ -2,7 +2,6 @@
 author = []
 categories = ["Selling"]
 date = 2020-11-03T08:00:00Z
-draft = true
 featured_image = "/v1604965108/mainimg_lesg47.jpg"
 tags = []
 title = "Your Guide to Home Appraisal"

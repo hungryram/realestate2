@@ -1,7 +1,8 @@
 ---
 footer:
   additional_links:
-    pages: []
+    pages: search.md
+    quick_links: []
   footer_background_color: "#232733"
   background_image: ''
   logo: ''
@@ -9,6 +10,10 @@ footer:
     Officia repellendus aliquam necessitatibus iure, porro voluptas magnam laboriosam
     nesciunt
   enable_black_text: false
+  disclaimer: |-
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quo hic perspiciatis velit **quisquam**? Praesentium sunt enim saepe reiciendis consectetur omnis sequi pariatur quam magni esse, temporibus, repellat odio quis?
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quo hic perspiciatis velit quisquam? Praesentium sunt enim saepe reiciendis consectetur omnis sequi pariatur quam magni esse, temporibus, repellat odio quis?
 branding:
   site_title: Real Estate
   logo: ''

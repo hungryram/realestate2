@@ -25,9 +25,9 @@ home_sections:
   image: "/v1604948665/agent-4_i3w6gg.jpg"
   image_alt_tag: John
   image_width: '400'
-- template: active-listings
-  heading: Active Listings
-  body: View listings that are active within the MLS
+- template: sold-listings
+  heading: Sold Listings
+  body: View sold listings in the office
 - template: featured-boxes
   heading: Featured Communities
   body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit

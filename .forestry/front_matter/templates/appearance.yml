@@ -134,6 +134,15 @@ fields:
       schema:
         format: markdown
     label: Footer Bio
+  - name: disclaimer
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Disclaimer
   label: Footer
 - name: sidebar
   type: field_group

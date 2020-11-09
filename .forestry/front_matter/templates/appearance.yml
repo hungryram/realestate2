@@ -109,18 +109,16 @@ fields:
     type: field_group
     config: {}
     fields:
-    - name: pages
-      type: select
-      default: []
+    - name: quick_links
+      type: list
       config:
-        required: false
-        options: []
+        use_select: true
+        min: 
+        max: 
         source:
           type: pages
           section: pages
-          file: 
-          path: 
-      label: Pages
+      label: Quick Links
     label: Additional Links
   - name: logo
     type: file

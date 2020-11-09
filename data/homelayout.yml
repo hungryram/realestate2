@@ -28,6 +28,15 @@ home_sections:
 - template: active-listings
   heading: Active Listings
   body: View listings that are active within the MLS
+- template: sold-listings
+  heading: ''
+  body: ''
+- template: rental-listings
+  heading: ''
+  body: ''
+- template: featured-listings
+  heading: ''
+  body: ''
 - template: home-testimonial
   heading: Heading
   body: ''

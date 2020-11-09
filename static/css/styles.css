@@ -1,5 +1,9 @@
 /* GLOBAL */
 
+body {
+  background: #fcfcfc;
+}
+
 mark {
   background:transparent;
   color: inherit;
@@ -101,6 +105,13 @@ ul.social-block li {
   list-style: none;
   display: inline;
   padding: 5px;
+}
+
+/* OVERWRITE */
+
+div.box {
+  border-radius: 0px;
+  box-shadow: 0 2px 3px rgba(148, 148, 148, 0.15), 0 0 0 1px rgba(250, 0, 0, 0)!important;
 }
 
 /* SEARCH */
@@ -286,7 +297,9 @@ div.level-item span.featured {
   color: #fff;
 }
 
-span.featured:empty {
+span.featured:empty,
+span.status:empty,
+span.grid-price:empty {
   display: none;
 }
 
@@ -403,6 +416,16 @@ div.filter-list ul li a {
 
 .filter-nav {
   display: none;
+}
+
+div.search-filter a:hover {
+  margin-left:6px;
+  transition: .3s;
+  color: #00AFFF;
+}
+
+div.search-filter a {
+  transition: .3s;
 }
 
 /* FILTER NAV */

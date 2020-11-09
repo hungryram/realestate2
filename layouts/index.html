@@ -49,6 +49,7 @@
   {{ end }}
 
   {{ if eq "home-agent" .template }}
+  {{ $agents := where $.Site.RegularPages "Type" "our-team" }}
     <div class="section">
       <div class="container">
         <div class="columns mb-6">
@@ -63,6 +64,7 @@
         </div>
         <div class="agent-container">
           <div class="responsive-slide">
+        {{ if gt $agents 0 }}
           {{ range where $.Site.RegularPages "Type" "our-team" }}
             <a href="{{ .Permalink }}">
               <div class="card ml-2 mr-2 mb-4">
@@ -81,6 +83,9 @@
               </div>
             </a>
           {{ end }}
+          {{ else }}
+            <h4 class="title is-6 has-text-centered">No Agents Found</h4>
+          {{ end }}
         </div>
       </div>
       <div class="columns">
@@ -93,6 +98,8 @@
   {{ end }}
 
   {{ if eq "home-blog" .template }}
+  {{ $blog := where $.Site.RegularPages "Type" "blog" }}
+
     <div class="section">
       <div class="container">
         <div class="columns mb-6">
@@ -106,6 +113,8 @@
           </div>
         </div>
         <div class="columns is-multiline">
+          {{ if gt $blog 0 }}
+
           {{ range first 4 (where $.Site.RegularPages "Type" "blog") }}
           <div class="column is-6 mb-4">
             <div class="card">
@@ -126,6 +135,11 @@
                 </div>
             </div>
           </div>
+          {{ end }}
+          {{ else }}
+            <div class="column">
+              <h4 class="title is-6 has-text-centered">No Blog Posts Found</h4>
+            </div>
           {{ end }}
           </div>
           <div class="columns">
@@ -330,6 +344,137 @@
     </div>
   </div>
   {{ end }}
+
+
+  {{ if eq "active-listings" .template }}
+  {{ $active := $.Site.Taxonomies.status.active }}
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+            {{ if .heading }}<h1 class="title is-4 has-text-centered">{{ .heading }}</h1>{{ end }}
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+    <div class="responsive-slide">
+      {{ if gt $active 0 }}
+        {{ range first 6 $active }}
+          <div class="mx-3">
+            {{ partial "templates/property-grid" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <h4 class="title is-6 has-text-centered">No Active Listings Found</h4>
+      {{end}}
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <a href="/status/active" class="btn-primary">View all</a>
+      </div>
+    </div>
+    </div> <!-- End container -->
+  </div><!-- End Section -->
+  {{ end }} 
+
+  {{ if eq "sold-listings" .template }}
+  {{ $sold := $.Site.Taxonomies.status.sold }}
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+            {{ if .heading }}<h1 class="title is-4 has-text-centered">{{ .heading }}</h1>{{ end }}
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+    <div class="responsive-slide">
+      {{ if gt $sold 0 }}
+        {{ range first 6 $sold }}
+          <div class="mx-3">
+            {{ partial "templates/property-grid" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <h4 class="title is-6 has-text-centered">No Sold Listings Found</h4>
+      {{end}}
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <a href="/status/sold" class="btn-primary">View all</a>
+      </div>
+    </div>
+    </div> <!-- End container -->
+  </div><!-- End Section -->
+  {{ end }} 
+
+  {{ if eq "auction-listings" .template }}
+  {{ $auction := $.Site.Taxonomies.status.auction }}
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+            {{ if .heading }}<h1 class="title is-4 has-text-centered">{{ .heading }}</h1>{{ end }}
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+    <div class="responsive-slide">
+      {{ if gt $auction 0 }}
+        {{ range first 6 $auction }}
+          <div class="mx-3">
+            {{ partial "templates/property-grid" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <h4 class="title is-6 has-text-centered">No Auction Listings Found</h4>
+      {{end}}
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <a href="/status/auction" class="btn-primary">View all</a>
+      </div>
+    </div>
+    </div> <!-- End container -->
+  </div><!-- End Section -->
+  {{ end }} 
+
+
+
+  {{ if eq "rental-listings" .template }}
+  {{ $rental := $.Site.Taxonomies.status.rental }}
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+            {{ if .heading }}<h1 class="title is-4 has-text-centered">{{ .heading }}</h1>{{ end }}
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+    <div class="responsive-slide">
+      {{ if gt $rental 0 }}
+        {{ range first 6 $rental }}
+          <div class="mx-3">
+            {{ partial "templates/property-grid" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <h4 class="title is-6 has-text-centered">No Rental Listings Found</h4>
+      {{end}}
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <a href="/status/rental" class="btn-primary">View all</a>
+      </div>
+    </div>
+    </div> <!-- End container -->
+  </div><!-- End Section -->
+  {{ end }} 
 
 
 {{ end }}

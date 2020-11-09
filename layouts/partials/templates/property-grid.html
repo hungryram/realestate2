@@ -1,4 +1,4 @@
-<div class="card property-grid">
+<div class="card property-grid mb-4">
 <a href="{{ .Permalink }}">
 <div class="card-image">
     <figure class="image is-3by2 darkoverlay">
@@ -44,23 +44,31 @@
       <span class="ml-2">{{ .Params.details.bedrooms }} Beds</span>
   </span>
   {{ end }}
+  {{ if .Params.details.bathrooms }}
   <span class="card-footer-item">
     <img src="/assets/shower-line.svg" alt="bed icon" width="20">
     <span class="ml-2">{{ .Params.details.bathrooms }} Baths</span>
   </span>
+  {{ end }}
 </footer>
 <footer class="card-footer">
+  {{ if .Params.details.square_footage }}
   <span class="card-footer-item">
     <img src="/assets/tile.svg" alt="bed icon" width="20">
     <span class="ml-2">{{ .Params.details.square_footage }} Sq. Ft.</span>
   </span>
+  {{ end }}
+  {{ if .Params.details.garage }}
   <span class="card-footer-item">
     <img src="/assets/garage.svg" alt="bed icon" width="20">
     <span class="ml-2">{{ .Params.details.garage }} Garage</span>
   </span>
+  {{ end }}
 </footer>
+{{ if .Params.properties }}
 <footer class="card-footer">
   <span class="card-footer-item">{{ .Params.properties }}</span>
 </footer>
+{{ end }}
 </a>
 </div>

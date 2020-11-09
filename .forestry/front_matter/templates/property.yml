@@ -498,3 +498,5 @@ fields:
   config: {}
   template: url
   label: URL
+pages:
+- content/listings/194-mercer-street.md

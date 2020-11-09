@@ -25,6 +25,9 @@ home_sections:
   image: "/uploads/agent-4.jpg"
   image_alt_tag: John
   image_width: '400'
+- template: active-listings
+  heading: ''
+  body: ''
 - template: home-testimonial
   heading: Heading
   body: ''

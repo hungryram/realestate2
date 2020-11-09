@@ -200,6 +200,20 @@ a.navbar-item img {
   max-height: 3.75rem;
 }
 
+.navbar-dropdown {
+  display: none;
+}
+
+.navbar-dropdown.is-active {
+  display: block;
+}
+
+@media screen and (max-width: 1087px){
+  a.navbar-item.has-text-white {
+    color: #000!important;
+  }
+}
+
 /* AGENT LIST */
 
 div.agent-container .level {
@@ -453,7 +467,7 @@ div.search-filter a {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 2000;
   top: 0;
   left: 0;
   background-color: #111;
@@ -482,10 +496,6 @@ div.search-filter a {
   padding-left: 20px;
   padding-top: 40px;
   font-size: 14px;
-}
-
-body {
-  transition: 0.5s;
 }
 
 .filter-drawer .closebtn {

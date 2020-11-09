@@ -7,9 +7,10 @@ fields:
   config:
     required: false
   label: Heading
+  default: Active Listings
 - name: body
   type: textarea
-  default: ''
+  default: View active listings in the MLS
   config:
     required: false
     wysiwyg: true

@@ -38,10 +38,12 @@
     </div>
 </div>
 <footer class="card-footer">
+  {{ if .Params.details.bedrooms }}
   <span class="card-footer-item">
       <img src="/assets/bed.svg" alt="bed icon" width="20">
       <span class="ml-2">{{ .Params.details.bedrooms }} Beds</span>
   </span>
+  {{ end }}
   <span class="card-footer-item">
     <img src="/assets/shower-line.svg" alt="bed icon" width="20">
     <span class="ml-2">{{ .Params.details.bathrooms }} Baths</span>
@@ -58,7 +60,7 @@
   </span>
 </footer>
 <footer class="card-footer">
-  <span class="card-footer-item">{{ .Params.property }}</span>
+  <span class="card-footer-item">{{ .Params.properties }}</span>
 </footer>
 </a>
 </div>

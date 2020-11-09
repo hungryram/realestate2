@@ -1,5 +1,7 @@
 +++
 cities = "Bloomington"
+city = "Riverside"
+date = 2020-08-11T00:00:00Z
 featured = ""
 price = "$300,000"
 properties = "Cabin"

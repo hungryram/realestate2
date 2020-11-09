@@ -13,7 +13,7 @@
                     <div class="inner-container">
                         <div class="columns is-multiline is-variable is-4">
                             {{ $paginator := .Paginate (where .Pages.ByDate "Type" "listings") 10 }}
-                            {{ range $paginator.Pages.ByDate }}
+                            {{ range $paginator.Pages }}
                                 <div class="column is-6">   
                                     {{ partial "templates/property-grid" . }}         
                                 </div>   

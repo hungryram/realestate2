@@ -15,12 +15,12 @@
                                                     <div class="content">
                                                         <div class="single-status">
                                                             {{ if .Params.status }}<span class="accent">{{ .Params.status }}</span>{{ end }}
-                                                            {{ if .Params.property }}<span class="property-type">{{ .Params.property }}</span>{{ end }}
+                                                            {{ if .Params.properties }}<span class="property-type">{{ .Params.properties }}</span>{{ end }}
                                                         </div>
                                                         <h1 class="title is-4 mb-2">{{ .Params.short_title }}</h1>
                                                         <div class="single-address">
                                                             <img src="/assets/map-pin.svg" alt="" width="30">
-                                                            <h4 class="title mb-0 ml-3 is-6 has-text-weight-normal">{{ .Title }}, {{ .Params.city }}, {{ .Params.state }} {{ .Params.zip }}</h4>
+                                                            <h4 class="title mb-0 ml-3 is-6 has-text-weight-normal">{{ .Title }}, {{ .Params.cities }}, {{ .Params.states }} {{ index .Params "zip-codes" }}</h4>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -58,6 +58,7 @@ fields:
   - text-and-image
   - text-and-contact-form
   - tiles
+  - active-listings
   config:
     min: 
     max: 

@@ -10,17 +10,34 @@
   <div class="hero-body slide-content">
     <div class="container has-text-centered">
       <div class="columns">
-        <div class="column has-text-white">
+        <div class="column is-half is-offset-one-quarter has-text-white">
           <h1 class="title is-1 has-text-white is-size-3-mobile mb-0">{{ .heading }}</h1>
           <p class="mt-4 is-size-7-mobile">{{ .body }}</p>
-          <div class="is-block mt-4">
-            {{ if .link }}<a href="{{ .link }}" class="hero-button is-size-7-mobile">{{ .link_label }}</a>{{ end }}
-          </div>
         </div>
-
+      </div>
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          {{ if eq $.Site.Data.idx.enable_idx false }}
+          <div class="center-qs">
+            <form action="{{ "search" | absURL }}">
+              <div class="field has-addons">
+                <div class="control">
+                  <input id="search-query" name="s" class="input" placeholder="Search by address, state, zip, city or MLS #" title="Search by address, state, zip, city or MLS #"/>
+                </div>
+                <div class="control">
+                  <button class="button primary-btn" type="submit">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>   
+          </div>
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
+
 
   <!-- Hero footer: will stick at the bottom -->
 {{ if $.Site.Data.idx.enable_idx }}

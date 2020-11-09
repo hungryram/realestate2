@@ -1,4 +1,4 @@
-baseURL = "https://www.pathfinderscarpetcleaning.com/"
+baseURL = "https://listings2.netlify.app/"
 languageCode = "en-us"
 summaryLength = 20
 [[menu.main]]

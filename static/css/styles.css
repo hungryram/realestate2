@@ -51,7 +51,8 @@ h2.title,
 h3.title,
 h4.title,
 h5.title,
-h6.title {
+h6.title,
+button {
     font-family: "Raleway", sans-serif!important;
 }
 
@@ -97,7 +98,7 @@ a.btn-primary:hover,
 button.button:hover {
   transition: .3s;
   border: 1px solid #ccc;
-  background: transparent!important;
+  background: rgb(247, 247, 247)!important;
   color: #222!important;
 }
 
@@ -112,6 +113,21 @@ ul.social-block li {
 div.box {
   border-radius: 0px;
   box-shadow: 0 2px 3px rgba(148, 148, 148, 0.15), 0 0 0 1px rgba(250, 0, 0, 0)!important;
+}
+
+/* STANDARD HOME SEARCH */
+
+.center-qs {
+  display: flex;
+  justify-content: center;
+}
+
+.center-qs #search-query {
+  margin-right: 100px;
+}
+
+.center-qs button.button.primary-btn {
+  border: none;
 }
 
 /* SEARCH */

@@ -58,6 +58,10 @@ sections:
 - type: document
   path: content/testimonials/_index.md
   label: Testimonials
+- type: document
+  path: content/contact/_index.md
+  label: Contact
+  match: "**/*"
 - type: heading
   label: Developer Access
 - type: document

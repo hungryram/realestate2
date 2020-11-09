@@ -21,15 +21,15 @@
         {{ range  first 4 ( where $.Site.RegularPages "Type" "blog") }}
         <a href="{{ .Permalink }}">
             <article class="media mb-5">
-                {{ if $.Params.featured_image }}
                 <div class="media-left">
                   <figure class="image is-96x96">
                     {{ if $.Params.featured_image }}
                     <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <img src="/assets/nophoto.jpg" alt="{{ .Title }}">
                     {{ end }}
                   </figure>
                 </div>
-                {{end}}
                 <div class="media-content">
                   <div class="content">
                       <h1 class="title is-6" style="margin: 0;">{{ .Params.title }}</h1>

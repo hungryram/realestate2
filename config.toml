@@ -9,16 +9,16 @@ weight = 1
 name = "Home"
 url = "/"
 weight = 1
-[params]
-cloudinary_url = "https://res.cloudinary.com/realestate2/image/upload"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+[params]
+cloudinary_url = "https://res.cloudinary.com/realestate2/image/upload"
 [taxonomies]
 category = "categories"
 city = "cities"
+featured = "featured"
 property = "properties"
 state = "states"
 status = "status"
 tag = "tags"
 zip = "zip-codes"
-featured = "featured"

@@ -5,7 +5,8 @@ slideshow:
   link_label: Read More
   link: https://www.hungryram.com
   image: "/v1604996475/slider3_o30w9i.jpg"
-  body: 'Modern real estate website powered by new technology. This site does not rely on any database which ensures optimal performance and the highest security'
+  body: Modern real estate website powered by new technology. This site does not rely
+    on any database which ensures optimal performance and the highest security
   enable_white_text: true
 - image: ''
   subtitle: my subtitle
@@ -13,7 +14,7 @@ slideshow:
   enable_white_text: true
   link: View Properties
   link_label: "/listings"
-  heading: 'No Heavy Resources'
+  heading: No Heavy Resources
 home_sections:
 - template: text-and-image
   heading: Discover Our Finest Homes
@@ -25,6 +26,9 @@ home_sections:
   image: "/v1604948665/agent-4_i3w6gg.jpg"
   image_alt_tag: John
   image_width: '400'
+- template: featured-idx-listings
+  heading: Our Listings
+  body: View listings from the MLS
 - template: sold-listings
   heading: Sold Listings
   body: View sold listings in the office

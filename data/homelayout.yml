@@ -1,11 +1,11 @@
 ---
 slideshow:
-- heading: Real Estate Template
-  subtitle: Website Subtitle
+- heading: Explore Beautiful Homes
+  subtitle: Let our team of experts guide you to your next home
   link_label: Read More
   link: https://www.hungryram.com
   image: "/v1604996475/slider3_o30w9i.jpg"
-  body: Testing body background
+  body: ''
   enable_white_text: true
 - image: ''
   subtitle: my subtitle

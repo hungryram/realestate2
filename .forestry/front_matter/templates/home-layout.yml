@@ -43,6 +43,7 @@ fields:
   template_types:
   - active-listings
   - sold-listings
+  - featured-idx-listings
   - rental-listings
   - featured-listings
   - auction-listings

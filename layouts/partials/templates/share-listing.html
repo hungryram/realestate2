@@ -19,7 +19,7 @@
     </a>
 
     <!-- Pinterest -->
-    <a href="https://www.pinterest.com/pin-builder/?url={{ .Permalink }}&media={{ index .Params.photos.gallery 0 }}&description={{ .Params.short_title }}&method=button" target="_blank">
+    <a href="https://www.pinterest.com/pin-builder/?url={{ .Permalink }}&media={{ $.Site.Params.cloudinary_url }}{{ index .Params.photos.gallery 0 }}&description={{ .Params.short_title }}&method=button" target="_blank">
       <img src="/assets/pinterest.svg" alt="twitter icon" width="25">
     </a>
 

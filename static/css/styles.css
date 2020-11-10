@@ -208,6 +208,10 @@ a.navbar-item img {
   display: block;
 }
 
+div.navbar-brand, .navbar-tabs {
+  align-items: center;
+}
+
 @media screen and (max-width: 1087px){
   a.navbar-item.has-text-white {
     color: #000!important;

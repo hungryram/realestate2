@@ -7,7 +7,7 @@
                 <div class="column is-6 has-text-centered">
                     <div>
                         {{ if .Params.details.agent_photo }}
-                        <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="width:80px;height:80px;border-radius:50%;object-fit:cover">
+                        <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="width:80px;height:80px;border-radius:50%;object-fit:cover">
                         {{ else }}
                         <img src="/assets/user.jpg" alt="use icon" width="100" style="border-radius:50%;">
                         {{ end }}

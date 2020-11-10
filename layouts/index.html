@@ -3,6 +3,25 @@
 <div class="home-section">
 {{ range .Site.Data.homelayout.home_sections }}
 
+{{ if eq "featured-idx-listings" .template }}
+<div class="section">
+<div class="container">
+    <div class="columns">
+        <div class="column">
+            {{ if .heading }}<h1 class="title is-4 has-text-centered">{{ .heading }}</h1>{{ end }}
+            {{ if .body }}
+            <p class="has-text-centered">{{ .body | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.idxhome.com/site/listing/gallery/slider/133408?columns=3&amp;rows=1&amp;effect=fade&amp;auto=false"></script>
+
+
+</div>
+</div>
+{{ end }}
+
 
   {{ if eq "home-testimonial" .template }}
     <div class="section">

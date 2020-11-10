@@ -6,6 +6,11 @@ div#ihf-main-container .thumbnail {
     margin-bottom: 70px;
 }
 
+.thumbnail div.row.gallery-prop-info {
+        display: flex;
+        margin-top: 20px;
+}
+
 img.ihf-slider-img {
     width: 600px;
     object-fit: cover;
@@ -21,7 +26,7 @@ div#ihf-main-container a {
     color: #000;
     font-size: 1rem;
     text-transform: capitalize;
-
+    line-height: 0px;
 
 }
 

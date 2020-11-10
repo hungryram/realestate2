@@ -19,9 +19,9 @@ branding:
   logo: "/v1604948205/cropped-logotrans_qa7sde.png"
   favicon: "/v1604948205/cropped-logotrans_qa7sde.png"
 header:
-  top_header_color: "#707984"
-  header_background_color: "#0B1723"
-  enable_white_text: true
+  top_header_color: "#181f24"
+  header_background_color: "#FFFFFF"
+  enable_white_text: false
   enable_white_text_top: true
 pages:
   image: "/v1604948756/mainimage_i5qltw.jpg"

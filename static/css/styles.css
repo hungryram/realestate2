@@ -3,7 +3,6 @@
 body {
   background: #fcfcfc;
   overflow: hidden;
-  word-break: break-all;
 }
 
 mark {
@@ -511,14 +510,14 @@ div.search-filter a {
 
 .pagination li a {
   transition: all .3s ease;
-  color: #f16397;
+  color: #222222;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 10px;
 }
 
 .pagination li:hover a {
-  background: #ffdbe8;
+  background: #8593a9;
   transition: all .3s ease;
 }
 
@@ -541,7 +540,7 @@ a.pagination-link, a.pagination-next, a.pagination-previous {
 }
 
 li.page-item.active {
-  border-bottom: 1px solid #ffdbe8;
+  border-bottom: 1px solid #8593a9;
 }
 
 li.page-item.disabled {

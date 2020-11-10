@@ -70,8 +70,8 @@
               <div class="card ml-2 mr-2 mb-4">
                 <div class="card-image">
                   <figure class="image is-square">
-                    {{ if .Params.photos.agent_photo }}
-                    <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="object-fit: cover;width:100%">
+                    {{ if .Params.details.agent_photo }}
+                    <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="object-fit: cover;width:100%">
                     {{ else }}
                     <img src="/assets/user.jpg" alt="">
                     {{ end }}
@@ -125,7 +125,7 @@
                 <div class="columns is-vcentered is-variable is-3">
                     <div class="column pb-0 pt-0">
                       {{ if .Params.featured_image }}
-                        <img src="{{ .Params.featured_image }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                        <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.featured_image }}" alt="" style="width:100%;height:250px;object-fit:cover">
                       {{ else }}
                       <img src="/assets/nophoto.jpg" alt="no photo" style="width:100%;height:250px;object-fit:cover">
                       {{ end }}

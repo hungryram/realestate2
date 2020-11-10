@@ -5,15 +5,15 @@ slideshow:
   link_label: Read More
   link: https://www.hungryram.com
   image: "/v1604996475/slider3_o30w9i.jpg"
-  body: ''
+  body: 'Modern real estate website powered by new technology. This site does not rely on any database which ensures optimal performance and the highest security'
   enable_white_text: true
 - image: ''
   subtitle: my subtitle
-  body: let our team help you
+  body: 'No need to bloat the website with drag and drop or page builders. '
   enable_white_text: true
   link: View Properties
   link_label: "/listings"
-  heading: Welcome to Real Estate
+  heading: 'No Heavy Resources'
 home_sections:
 - template: text-and-image
   heading: Discover Our Finest Homes
@@ -21,7 +21,7 @@ home_sections:
     phone or computer. Easily manage your website through our website editor customized
     specifically for real estate professionals.
   button: Read more
-  button_link: "/teams"
+  button_link: "/our-team"
   image: "/v1604948665/agent-4_i3w6gg.jpg"
   image_alt_tag: John
   image_width: '400'

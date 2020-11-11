@@ -54,6 +54,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - heading-and-body
   - our-team
 - type: document
   path: content/testimonials/_index.md

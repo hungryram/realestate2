@@ -66,3 +66,19 @@ div#ihf-main-container input.form-control,
 div#ihf-main-container select.form-control {
     border-radius: 0!important;
 }
+
+@media screen and (max-width:768px){
+    div.hero-foot {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    div.mobile-qs {
+        display: none;
+    }
+    div.hero-body {
+        position:relative;
+        top:100px;
+      }
+}

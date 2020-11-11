@@ -174,3 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+
+    // Check for click events on the navbar burger icon
+    $(".main-drop").click(function() {
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-dropdown", this).toggleClass("is-active");
+    });

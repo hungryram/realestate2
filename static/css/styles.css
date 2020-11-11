@@ -141,6 +141,9 @@ input#search-query::placeholder {
 }
 
 /* HERO */
+
+
+
 /** Hero Text Animation **/
   
   @-webkit-keyframes fadeInUpSD {
@@ -222,6 +225,10 @@ a.navbar-item:hover,
 a.navbar-link:hover,
 a.navbar-dropdown:hover {
   color: rgb(107, 107, 107);
+}
+
+a.navbar-link:not(.is-arrowless)::after {
+  display: none;
 }
 
 /* AGENT LIST */

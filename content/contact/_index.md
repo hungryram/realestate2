@@ -1,4 +1,6 @@
 +++
+body = ""
+heading = ""
 title = "Contact"
 [menu.main]
 weight = 7

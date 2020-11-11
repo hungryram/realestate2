@@ -2,6 +2,6 @@
 title = "Offices"
 [menu.main]
 name = "Office"
-weight = 5
+weight = 6
 
 +++

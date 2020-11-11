@@ -43,9 +43,6 @@ home_sections:
   - heading: Corona
     image: "/v1604996475/slider3_o30w9i.jpg"
     link: "/contact"
-- template: featured-idx-listings
-  heading: ''
-  body: ''
 - template: home-agent
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market

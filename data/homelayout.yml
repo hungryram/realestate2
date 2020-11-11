@@ -37,15 +37,15 @@ home_sections:
   body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit
     non delectus eos, quas, dolorem alias '
   featured:
-  - image: ''
-    link: "/la"
+  - image: "/v1605078586/losangeles_huzxzc.jpg"
+    link: "/contact"
     heading: Los Angeles
   - heading: Whittier
-    image: ''
-    link: "/whittier"
+    image: "/v1605078607/livingroom_t0atuf.jpg"
+    link: "/contact"
   - heading: Corona
-    image: ''
-    link: "/corona"
+    image: "/v1604996475/slider3_o30w9i.jpg"
+    link: "/contact"
 - template: home-agent
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market

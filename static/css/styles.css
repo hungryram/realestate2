@@ -113,9 +113,7 @@ ul.social-block li {
 
 /* OVERWRITE */
 
-div.section {
-  padding: 3rem 0.5rem;
-}
+
 
 div.box {
   border-radius: 0px;
@@ -298,6 +296,19 @@ div.text-form {
 }
 
 /* PROPERTY */
+
+.darkoverlay {
+  overflow: hidden;
+}
+
+.darkoverlay img:hover {
+  transform: scale(1.1);
+  transition: all .8s ease;
+}
+
+.darkoverlay img {
+  transition: all .8s ease;
+}
 
 div.property-grid span {
   font-size: 12px;

@@ -1,3 +1,93 @@
 {{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-variable is-8">
+            <div class="column is-8">
+                <main>
+                    <div class="inner-container">
+                        {{ if .Params.heading }}<h1 class="title is-4 has-text-centered">{{ .Params.heading }}</h1>{{ end }}
+                        {{ if .Params.body }}
+                        <p class="has-text-centered">{{ .Params.body | markdownify }}</p>
+                        {{ end }}
+                        <div class="form-container">
+                            {{ if $.Site.Data.idx.enable_idx }}
+                            {{ if $.Site.Data.idx.incomplete_subdomain }}
+                            <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
+                            {{ else }}
+                            <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.complete_subdomain }}/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
+                            {{ end }}
+                              <div class="field is-horizontal">
+                                <div class="field-body">
+                                  <div class="field">
+                                    <p class="control is-expanded">
+                                      <input class="input" type="text" placeholder="Name" name="contactName">
+                                    </p>
+                                  </div>
+                                  <div class="field">
+                                    <p class="control">
+                                      <input class="input" type="text" placeholder="Email" name="email">
+                                    </p>
+                                  </div>
+                                  <div class="field">
+                                    <p class="control">
+                                      <input class="input" type="text" placeholder="Phone" name="phone">
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                    <textarea id="message" placeholder="Message" name="message" class="textarea" style="height: 140px;" rows="3"> </textarea>
+                                </div>
+                              </div>
+                              <div class="control">
+                                <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                              </div>
+                            </form>
+                            {{ else }}
+                            <form name="Home Widget Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                              <input name="bot-field" type="hidden"/>
+                
+                              <div class="field">
+                                <p class="control is-expanded">
+                                  <input class="input" type="text" placeholder="First Name" name="first name">
+                                </p>
+                              </div>
+                
+                              <div class="field">
+                                <p class="control">
+                                  <input class="input" type="text" placeholder="Last Name" name="last name">
+                                </p>
+                              </div>
+                              
+                              <div class="field">
+                                <div class="control">
+                                  <input class="input" type="text" placeholder="Phone" name="phone">
+                                </div>
+                              </div>
+                    
+                              <div class="field">
+                                <div class="control">
+                                  <input class="input" type="email" placeholder="Email" name="email address">
+                                </div>
+                              </div>
+                              <div class="field">
+                                <div class="control">
+                                  <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
+                                </div>
+                              </div>
+                              <div class="control">
+                                <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                              </div>
+                            </form>
+                            {{ end }}
+                        </div>
+                    </div>
+                </main>
+            </div>
+                {{ partial "templates/contact-sidebar" . }}
+        </div>
+    </div>
+</div>
 
 {{ end }}

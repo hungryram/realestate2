@@ -45,7 +45,11 @@
   <div class="container">
     <div class="columns has-text-left has-text-white is-mobile is-vcentered" style="background:rgba(3,7,16,0.6);padding:20px;">
       <div class="column quicksearch">
-        <script type="text/javascript" src="https://{{ $ihfID }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+        {{ if $.Site.Data.idx.incomplete_subdomain }}
+        <script type="text/javascript" src="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+        {{ else }}
+        <script type="text/javascript" src="https://{{ $.Site.Data.idx.complete_subdomain }}.idxhome.com/site/listing/search/widget/{{ $ihfID }}?style=horizontal"></script>
+        {{ end }}
       </div>
     </div>
   </div>

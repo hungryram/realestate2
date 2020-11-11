@@ -234,89 +234,95 @@
   {{ if eq "text-and-contact-form" .template }}
   <div class="text-and-contact pt-6 pb-6" style="background:{{ if .background_image }}linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ $.Site.Params.cloudinary_url }}{{ .background_image }}) no-repeat center;background-size:cover{{ else }}{{ .background_color }}{{ end }}!important">
     <div class="inner">
-      <div class="container">
-        <div class="columns is-vcentered is-variable is-8">
-          <div class="column is-7">
-            <h2 class="title is-4 {{ if .enable_white_text }}has-text-white{{ end }}">{{ .heading }}</h2>
-            <p class="{{ if .enable_white_text }}has-text-white{{ end }}">{{ .body | markdownify }}</p>
-          </div>
-          <div class="column ml-6 mr-6">
-            <div class="text-form">
-              {{ if .form.heading }}
-              <h2 class="title is-4">{{ .form.heading }}</h2>
-              {{ end }}
-              {{ if .form.heading }}
-              <div class="summary-card mb-4">
-                <p>{{ .body | markdownify }}</p>
+      <div class="section" style="background:transparent">
+        <div class="container">
+          <div class="columns is-vcentered is-variable is-8">
+            <div class="column is-7">
+              <h2 class="title is-4 {{ if .enable_white_text }}has-text-white{{ end }}">{{ .heading }}</h2>
+              <p class="{{ if .enable_white_text }}has-text-white{{ end }}">{{ .body | markdownify }}</p>
+            </div>
+            <div class="column ml-6 mr-6">
+              <div class="text-form">
+                {{ if .form.heading }}
+                <h2 class="title is-4">{{ .form.heading }}</h2>
+                {{ end }}
+                {{ if .form.heading }}
+                <div class="summary-card mb-4">
+                  <p>{{ .body | markdownify }}</p>
+                </div>
+                {{ end }}
+                {{ if $.Site.Data.idx.enable_idx }}
+                {{ if $.Site.Data.idx.incomplete_subdomain }}
+                <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
+                {{ else }}
+                <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.complete_subdomain }}/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
+                {{ end }}
+                  <div class="field is-horizontal">
+                    <div class="field-body">
+                      <div class="field">
+                        <p class="control is-expanded">
+                          <input class="input" type="text" placeholder="Name" name="contactName">
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control">
+                          <input class="input" type="text" placeholder="Email" name="email">
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control">
+                          <input class="input" type="text" placeholder="Phone" name="phone">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                        <textarea id="message" placeholder="Message" name="message" class="textarea" style="height: 140px;" rows="3"> </textarea>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                  </div>
+                </form>
+                {{ else }}
+                <form name="Home Widget Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                  <input name="bot-field" type="hidden"/>
+    
+                  <div class="field">
+                    <p class="control is-expanded">
+                      <input class="input" type="text" placeholder="First Name" name="first name">
+                    </p>
+                  </div>
+    
+                  <div class="field">
+                    <p class="control">
+                      <input class="input" type="text" placeholder="Last Name" name="last name">
+                    </p>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Phone" name="phone">
+                    </div>
+                  </div>
+        
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="email" placeholder="Email" name="email address">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                  </div>
+                </form>
+                {{ end }}
               </div>
-              {{ end }}
-              {{ if .Site.Data.idx.enable_idx }}
-              <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://1stindependencerealty.idxhome.com/contact/{{ .Site.Data.idx.idx_id }}" method="POST" data-ihf-event-bound="true">
-                <div class="field is-horizontal">
-                  <div class="field-body">
-                    <div class="field">
-                      <p class="control is-expanded">
-                        <input class="input" type="text" placeholder="Name" name="contactName">
-                      </p>
-                    </div>
-                    <div class="field">
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Email" name="email">
-                      </p>
-                    </div>
-                    <div class="field">
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Phone" name="phone">
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                      <textarea id="message" placeholder="Message" name="message" class="textarea" style="height: 140px;" rows="3"> </textarea>
-                  </div>
-                </div>
-                <div class="control">
-                  <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
-                </div>
-              </form>
-              {{ else }}
-              <form name="Home Widget Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <input name="bot-field" type="hidden"/>
-  
-                <div class="field">
-                  <p class="control is-expanded">
-                    <input class="input" type="text" placeholder="First Name" name="first name">
-                  </p>
-                </div>
-  
-                <div class="field">
-                  <p class="control">
-                    <input class="input" type="text" placeholder="Last Name" name="last name">
-                  </p>
-                </div>
-                
-                <div class="field">
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Phone" name="phone">
-                  </div>
-                </div>
-      
-                <div class="field">
-                  <div class="control">
-                    <input class="input" type="email" placeholder="Email" name="email address">
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
-                  </div>
-                </div>
-                <div class="control">
-                  <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
-                </div>
-              </form>
-              {{ end }}
             </div>
           </div>
         </div>

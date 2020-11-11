@@ -1,5 +1,5 @@
 ---
 ihf_client_id: 133408
 enable_idx: true
-incomplete_subdomain: ''
-complete_subdomain: search.anitatherealtor.com
+incomplete_subdomain: search
+complete_subdomain: ''

@@ -218,6 +218,12 @@ div.navbar-brand, .navbar-tabs {
   }
 }
 
+a.navbar-item:hover,
+a.navbar-link:hover,
+a.navbar-dropdown:hover {
+  color: rgb(107, 107, 107);
+}
+
 /* AGENT LIST */
 
 div.agent-container .level {

@@ -71,6 +71,21 @@ fields:
     config:
       required: false
     label: Address
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  - name: state
+    type: text
+    config:
+      required: false
+    label: State
+  - name: zip_code
+    type: text
+    config:
+      required: false
+    label: Zip Code
   label: Contact Information
 - name: search_engine_optimization
   type: field_group

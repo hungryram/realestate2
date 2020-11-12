@@ -28,7 +28,13 @@ home_sections:
   image_width: '400'
 - template: active-listings
   heading: Active Listings
-  body: View active listings in the MLS
+  body: View active listings in the office
+- template: rental-listings
+  heading: Rental Listings
+  body: View rental listings in the office
+- template: sold-listings
+  heading: Sold Listings
+  body: View sold listings in the office
 - template: featured-boxes
   heading: Featured Communities
   body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit

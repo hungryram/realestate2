@@ -1,6 +1,7 @@
 +++
 body = "View featured properties from our office"
-title = "Our Properties"
+status = "Sold"
+title = "Browse Our Properties"
 [menu.footer]
 name = "Listings"
 weight = 2

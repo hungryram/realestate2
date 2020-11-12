@@ -56,6 +56,13 @@ sections:
   templates:
   - heading-and-body
   - our-team
+- type: directory
+  path: content/partners
+  label: Partners
+  create: documents
+  match: "**/*"
+  templates:
+  - heading-and-body
 - type: document
   path: content/testimonials/_index.md
   label: Testimonials

@@ -1,11 +1,20 @@
 {{ define "main" }}
+{{ $company := .Site.Data.profile.company_name }}
 <div class="section">
     <div class="container">
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
-                {{ .Title }}
+                <div class="content">
+                    <h1 class="title is-4 has-text-centered">{{ $company }} {{ .Title }}</h1>
+                    <p><strong>Last Updated: </strong>{{ .Params.last_update }}</p>
+                    {{ if in .Permalink "privacy" }}
+                    <p>By using our website, you consent to our Privacy Policy and agree to its terms. Your privacy is important to us. {{ $company }} ("We", "us", "our" "{{ $company }}") provides this privacy policy to address any privacy concerns you may have and how we use it. If you have any additional questions or require more information, please contact us.</p>
+                    {{ end }}
+                    {{ .Content }}
+                </div>
             </div>
         </div>
     </div>
 </div>
 {{ end }}
+

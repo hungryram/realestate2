@@ -25,5 +25,8 @@ fields:
   config:
     required: false
   label: Complete Subdomain
+- name: enable_google_recaptcha
+  type: boolean
+  label: Enable Google Recaptcha
 pages:
 - data/idx.yaml

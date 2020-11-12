@@ -1,5 +1,5 @@
 +++
-photo_or_logo = "/v1605158190/hungryramsquare_lfpfzh.png"
+photo_or_logo = "/v1605159239/0_piqifa.jpg"
 title = "Hungry Ram"
 url = ""
 [contact]

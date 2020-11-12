@@ -17,13 +17,6 @@ sections:
   path: data/idx.yaml
   label: IDX
 - type: directory
-  path: content/listings
-  label: Listings
-  create: documents
-  match: "**/*"
-  templates:
-  - property
-- type: directory
   path: content
   label: Pages
   create: documents
@@ -42,6 +35,13 @@ sections:
   - blog
 - type: heading
   label: Default Pages
+- type: directory
+  path: content/listings
+  label: Listings
+  create: documents
+  match: "**/*"
+  templates:
+  - property
 - type: directory
   path: content/offices
   label: Offices

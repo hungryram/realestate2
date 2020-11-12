@@ -43,9 +43,6 @@ home_sections:
   - heading: Corona
     image: "/v1604996475/slider3_o30w9i.jpg"
     link: "/contact"
-- template: sold-listings
-  heading: Sold Listings
-  body: View sold listings in the office
 - template: home-agent
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market

@@ -10,9 +10,12 @@ contact_information:
   phone: "5555555555"
   name: Demo Account
   cell: 658-445-6326
-  address: 412 Shady Dr. Riverside CA, 92885
+  address: '412 Westside Rd. '
   email: ram@hungryram.com
   license: BRE 8431654
+  city: Riverside
+  state: CA
+  zip_code: "92833"
 search_engine_optimization:
   title_tag: Real Estate Theme
   meta_description: No page builders or drag and drop. Experience a new technology

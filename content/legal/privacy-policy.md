@@ -1,4 +1,5 @@
 +++
+last_update = "November 12, 2020"
 meta_description = ""
 title = "Privacy Policy"
 title_tag = ""

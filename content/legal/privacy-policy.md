@@ -57,6 +57,8 @@ Different browsers provide different settings, if you would like to clear cookie
 
 Users and visitors can opt out of Google Analytics by downloading the browser extension "Google Analytics Opt-out Browser add-on"
 
+Note that we may not have access to or control of any cookies used by outside or third-party providers.
+
 ##### Removing Personal Information
 
 Personal information cannot be removed or destroyed unless instructed to by the visitor who provided the information or management. Information can be retained for a period of time necessary to fulfill the purposes outlined, unless an extension period is required or permitted by law.
@@ -69,7 +71,7 @@ If you would like to request that your information be updated, we recommend cont
 
 ##### Updating Privacy Policy
 
- As our website grows, so do our privacy policy. We may notify you of any changes via any form of contact provided by you.
+As our website grows, so do our privacy policy. We may notify you of any changes via any form of contact provided by you.
 
 ##### Your Rights
 
@@ -80,3 +82,7 @@ You have the following rights:
 * The right to remove your personal information.
 * The right to be removed from direct marketing or legitimate interests.
 * The right to restrict your information.
+
+##### Contact us
+
+If you have any questions or concerns, please contact us.

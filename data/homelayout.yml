@@ -26,9 +26,9 @@ home_sections:
   image: "/v1604948665/agent-4_i3w6gg.jpg"
   image_alt_tag: John
   image_width: '400'
-- template: sold-listings
-  heading: Sold Listings
-  body: View sold listings in the office
+- template: active-listings
+  heading: Active Listings
+  body: View active listings in the MLS
 - template: featured-boxes
   heading: Featured Communities
   body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit
@@ -43,9 +43,9 @@ home_sections:
   - heading: Corona
     image: "/v1604996475/slider3_o30w9i.jpg"
     link: "/contact"
-- template: featured-idx-listings
-  heading: ''
-  body: ''
+- template: sold-listings
+  heading: Sold Listings
+  body: View sold listings in the office
 - template: home-agent
   heading: Our Team
   body: Helpful agents that will guide you in the real estate market

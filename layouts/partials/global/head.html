@@ -40,5 +40,9 @@
 
 <!-- FAVICON -->
 <link rel="shortcut icon" href="{{ $.Site.Params.cloudinary_url }}{{ .Site.Data.appearance.branding.favicon }}" />
+
+{{ if $.Site.Data.idx.enable_google_recaptcha }}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{{ end }}
 </head>
 <body>

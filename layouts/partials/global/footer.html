@@ -11,6 +11,7 @@
                     {{ else }}
                     <h1 class="title is-4 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.company_name }}</h1>
                     {{ end }}
+                    <em class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.contact_information.license }}</em>
                 </div>
                 <div class="column">
                     <h4 class="title is-6 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.company_name }}</h4>

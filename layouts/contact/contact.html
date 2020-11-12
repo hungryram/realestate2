@@ -5,10 +5,7 @@
             <div class="column is-8">
                 <main>
                     <div class="inner-container">
-                        {{ if .Params.heading }}<h1 class="title is-4 has-text-centered">{{ .Params.heading }}</h1>{{ end }}
-                        {{ if .Params.body }}
-                        <p class="has-text-centered">{{ .Params.body | markdownify }}</p>
-                        {{ end }}
+                        {{ if .Params.heading }}<h1 class="title is-4 has-text-left">{{ .Params.heading }}</h1>{{ end }}
                         <div class="form-container">
                             {{ if $.Site.Data.idx.enable_idx }}
                             {{ if $.Site.Data.idx.incomplete_subdomain }}
@@ -20,17 +17,17 @@
                                 <div class="field-body">
                                   <div class="field">
                                     <p class="control is-expanded">
-                                      <input class="input" type="text" placeholder="Name" name="contactName">
+                                      <input class="input" type="text" placeholder="Name" name="contactName" required>
                                     </p>
                                   </div>
                                   <div class="field">
                                     <p class="control">
-                                      <input class="input" type="text" placeholder="Email" name="email">
+                                      <input class="input" type="text" placeholder="Email" name="email" required>
                                     </p>
                                   </div>
                                   <div class="field">
                                     <p class="control">
-                                      <input class="input" type="text" placeholder="Phone" name="phone">
+                                      <input class="input" type="text" placeholder="Phone" name="phone" required>
                                     </p>
                                   </div>
                                 </div>
@@ -40,12 +37,29 @@
                                     <textarea id="message" placeholder="Message" name="message" class="textarea" style="height: 140px;" rows="3"> </textarea>
                                 </div>
                               </div>
+                              {{ if $.Site.Data.idx.enable_google_recaptcha }}
+                              <div class="field-body">
+                                <div class="field">
+                                  <div class="control">
+                                    <div class="g-recaptcha" data-sitekey="{{ $.Site.Data.idx.google_site_key }}"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            {{ end }}
                               <div class="control">
-                                <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                                <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }};width:305px">Submit</button>
+                              </div>
+                              <div class="field mt-5">
+                                <div class="control">
+                                  <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    <span class="is-size-7">By submitting this form you confirm you have read and agreed to our <a href="">Terms of service</a> and <a href="">Privacy Policy.</a> You consent to having this website store the submitted information so we can respond to the inquiry. Don't worry, you can request to have your information removed anytime.</span>
+                                  </label>
+                                </div>
                               </div>
                             </form>
                             {{ else }}
-                            <form name="Home Widget Form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <form name="Home Widget Form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
                               <input name="bot-field" type="hidden"/>
                 
                               <div class="field">
@@ -76,8 +90,17 @@
                                   <textarea class="textarea" placeholder="Your Message" name="message"></textarea>
                                 </div>
                               </div>
+
                               <div class="control">
-                                <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">Submit</button>
+                                <button class="button" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }};width:305px">Submit</button>
+                              </div>
+                              <div class="field mt-5">
+                                <div class="control">
+                                  <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    <span class="is-size-7">By submitting this form you confirm you have read and agreed to our <a href="">Terms of service</a> and <a href="">Privacy Policy.</a> You consent to having this website store the submitted information so we can respond to the inquiry. Don't worry, you can request to have your information removed anytime.</span>
+                                  </label>
+                                </div>
                               </div>
                             </form>
                             {{ end }}

@@ -6,8 +6,11 @@
     <div class="section">
         <div class="container">
             <div class="columns has-text-centered">
-                <div class="column">
-                    <h2 class="title is-3 has-text-white">{{ replace .Name "-" " " | title }}</h2>
+                <div class="column has-text-white">
+                    <h2 class="title is-3 has-text-white mb-4">{{ replace .Name "-" " " | title }}</h2>
+                    {{ if .Params.body }}
+                        {{ .Params.body | markdownify }}
+                    {{ end }}
                 </div>
             </div>
         </div>

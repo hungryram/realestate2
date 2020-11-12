@@ -9,13 +9,17 @@
         </div>
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
-                {{ if .Site.Data.idx.enable_idx }}
-                
-                <form action="https://karinacrisp.idxhome.com/valuation/{{ .Site.Data.idx.ihomefinder_client_id }}" class="form-horizontal" data-ihf-event="valuation-request-form-submit" data-ihf-event-bound="true" id="ihf-valuation-request-form" method="post" name="ihf-valuation-request-form">
-                {{ else }}
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-page">
+              {{ if $.Site.Data.idx.enable_idx }}
+              {{ if $.Site.Data.idx.incomplete_subdomain }}
+              <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.incomplete_subdomain }}.idxhome.com/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
+              {{ else }}
+              <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.complete_subdomain }}/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
+              {{ end }}
+              {{ end }}
+              {{ if ne $.Site.Data.idx.enable_idx }}
+                <form name="Home Valuation Form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
                 <input name="bot-field" type="hidden"/>
-                {{ end }}
+              {{ end }}
                     <div class="field is-horizontal">
                         <div class="field-label is-normal">
                           <label class="label">Name</label>
@@ -250,6 +254,20 @@
                           </div>
                         </div>
                       </div>
+
+                      {{ if $.Site.Data.idx.enable_google_recaptcha }}
+                      <div class="field is-horizontal">
+                        <div class="field-label">
+                        </div>
+                        <div class="field-body">
+                          <div class="field">
+                            <div class="control">
+                              <div class="g-recaptcha" data-sitekey="{{ $.Site.Data.idx.google_site_key }}"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {{ end }}
                       
                       <div class="field is-horizontal">
                         <div class="field-label">
@@ -265,6 +283,23 @@
                           </div>
                         </div>
                       </div>
+
+                      <div class="field is-horizontal">
+                        <div class="field-label">
+                          <!-- Left empty for spacing -->
+                        </div>
+                        <div class="field-body">
+                          <div class="field mt-5">
+                            <div class="control">
+                              <label class="checkbox">
+                                <input type="checkbox" required>
+                                <span class="is-size-7">By submitting this form you confirm you have read and agreed to our <a href="">Terms of service</a> and <a href="">Privacy Policy.</a> You consent to having this website store the submitted information so we can respond to the inquiry. Don't worry, you can request to have your information removed anytime.</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
                   </form>
             </div>
         </div>

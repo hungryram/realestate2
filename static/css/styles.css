@@ -57,7 +57,11 @@ button {
     font-family: "Raleway", sans-serif!important;
 }
 
-
+input.input,
+select.select,
+textarea.textarea {
+  border-radius: 0;
+}
 
 body p,
 body li,
@@ -293,6 +297,12 @@ div.tiles .column:hover {
 div.text-form {
   background: #F2F2F3;
   padding: 40px;
+}
+
+/* CONTACT */
+
+#ihf-contact-request-form label {
+  font-weight: 400;
 }
 
 /* PROPERTY */

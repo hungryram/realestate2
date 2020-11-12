@@ -1,7 +1,8 @@
 +++
 title = "Offices"
 [menu.main]
-name = "Office"
-weight = 6
+name = "Our Office"
+parent = "Resources"
+weight = 3
 
 +++

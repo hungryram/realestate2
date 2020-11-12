@@ -5,6 +5,6 @@ meta_description = "Send us an email and our team will get back to you as soon a
 title = "Contact"
 title_tag = "Contact the Team"
 [menu.main]
-weight = 7
+weight = 6
 
 +++

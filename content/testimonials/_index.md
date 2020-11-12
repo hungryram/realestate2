@@ -5,7 +5,8 @@ title = "Testimonial"
 title_tag = "Testimonial"
 [menu.main]
 name = "Testimonials"
-weight = 4
+parent = "Resources"
+weight = 1
 [[testimonials]]
 date = "Sep 20, 2020"
 name = "Roger Benn"

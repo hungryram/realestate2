@@ -6,6 +6,14 @@ name = "Home"
 url = "/"
 weight = 1
 [[menu.main]]
+name = "Blog"
+parent = "Resources"
+url = "/blog"
+weight = 4
+[[menu.main]]
+name = "Resources"
+weight = 4
+[[menu.main]]
 name = "Home Value Request"
 parent = "Sellers"
 url = "/home-value-request"

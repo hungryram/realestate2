@@ -30,13 +30,6 @@ sections:
   match: "*"
   templates:
   - pages
-- type: directory
-  path: content/offices
-  label: Offices
-  create: documents
-  match: "**/*"
-  templates:
-  - offices
 - type: heading
   label: Blog
 - type: directory
@@ -45,9 +38,18 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - heading-and-body
   - blog
 - type: heading
   label: Default Pages
+- type: directory
+  path: content/offices
+  label: Offices
+  create: documents
+  match: "**/*"
+  templates:
+  - heading-and-body
+  - offices
 - type: directory
   path: content/our-team
   label: My Team

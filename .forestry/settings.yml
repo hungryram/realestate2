@@ -62,6 +62,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - partners
   - heading-and-body
 - type: document
   path: content/testimonials/_index.md

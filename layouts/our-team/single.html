@@ -141,7 +141,6 @@
                                                       </svg>
                                                 </a></li>
                                                 {{end}}
-                    
                                               </ul>
                                         </div>
                                     </div>
@@ -158,6 +157,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{ if or .Params.details.languages .Params.details.specialty }}
                         <div class="column">
                             <div class="card">
                                 <header class="card-header">
@@ -184,6 +184,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{ end }}
                     </div>
                 </main>
             </div>

@@ -11,21 +11,21 @@
                     {{ else }}
                     <h1 class="title is-4 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.company_name }}</h1>
                     {{ end }}
-                    <em class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.contact_information.license }}</em>
+                    <em class="has-text-weight-light {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.contact_information.license }}</em>
                 </div>
                 <div class="column">
                     <h4 class="title is-6 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.company_name }}</h4>
                     {{ if $footer.footer_bio }}
-                    <p class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footer.footer_bio }}</p>
+                    <p class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} has-text-weight-light">{{ $footer.footer_bio }}</p>
                     {{ end }}
                 </div>
                 <div class="column">
                     <h4 class="title is-6 {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">Contact</h4>
                     <ul>
-                        {{ if $footerContact.company_name }}<li class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.company_name }}</li>{{ end }}
-                        {{ if $footerContact.contact_information.cell }}<li><a href="tel:{{ $footerContact.contact_information.cell }}" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.contact_information.cell }}</a></li>{{ end }}
-                        {{ if $footerContact.contact_information.email }}<li><a href="tel:{{ $footerContact.contact_information.cell }}" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.contact_information.email }}</a></li>{{ end }}
-                        {{ if $footerContact.contact_information.address }}<li><a href="https://www.google.com/maps/place/{{ $footerContact.contact_information.address }}" target="_blank" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }}">{{ $footerContact.contact_information.address }}</a></li>{{ end }}
+                        {{ if $footerContact.company_name }}<li class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} has-text-weight-light">{{ $footerContact.company_name }}</li>{{ end }}
+                        {{ if $footerContact.contact_information.cell }}<li><a href="tel:{{ $footerContact.contact_information.cell }}" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} has-text-weight-light">{{ $footerContact.contact_information.cell }}</a></li>{{ end }}
+                        {{ if $footerContact.contact_information.email }}<li><a href="tel:{{ $footerContact.contact_information.cell }}" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} has-text-weight-light">{{ $footerContact.contact_information.email }}</a></li>{{ end }}
+                        {{ if $footerContact.contact_information.address }}<li><a href="https://www.google.com/maps/place/{{ $footerContact.contact_information.address }}" target="_blank" class="{{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} has-text-weight-light">{{ $footerContact.contact_information.address }}</a></li>{{ end }}
                     </ul>
                 </div>
                 <div class="column">
@@ -33,7 +33,7 @@
                     <nav class="footer-nav">
                         {{ $currentPage := . }}
                         {{ range .Site.Menus.footer }}
-                        <a class="is-block {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} footer-nav-item{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                        <a class="is-block has-text-weight-light {{ if $footer.enable_black_text }}has-text-black{{ else }}has-text-white{{ end }} footer-nav-item{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                         {{ end }}
                     </nav>
                 </div>

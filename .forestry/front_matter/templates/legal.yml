@@ -12,3 +12,5 @@ fields:
   config: {}
   template: seo
   label: SEO
+pages:
+- content/legal/terms-and-conditions.md

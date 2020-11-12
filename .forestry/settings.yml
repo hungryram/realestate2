@@ -78,15 +78,12 @@ sections:
 - type: document
   path: content/legal/terms-and-conditions.md
   label: Terms and Conditions
-  match: "**/*"
 - type: document
   path: content/legal/privacy-policy.md
   label: Privacy Policy
-  match: "**/*"
 - type: document
   path: content/legal/accessibility.md
   label: Accessibility
-  match: "**/*"
 - type: heading
   label: Developer Access
 - type: document

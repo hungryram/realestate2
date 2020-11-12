@@ -28,5 +28,10 @@ fields:
 - name: enable_google_recaptcha
   type: boolean
   label: Enable Google Recaptcha
+- name: google_site_key
+  type: text
+  config:
+    required: false
+  label: Google Site Key
 pages:
 - data/idx.yaml

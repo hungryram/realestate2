@@ -5,10 +5,9 @@
 {{ $bodyDesc := .Params.body | truncate 170 }}
 <!-- OPEN GRAPH -->
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="{{ $logo }}">
+<meta property="og:image" content="{{ $.Site.Params.cloudinary_url }}{{ $logo }}"/>
 
 {{- if $.IsHome -}}
-    <meta property="og:image" content="{{ $logo | absURL }}"/>
     <meta property="og:title" content="{{ $seo.title_tag }}"/>
     <meta property="og:description" content="{{ $seo.meta_description }}"/>
     <meta property="og:type" content="website" />
@@ -38,7 +37,6 @@
     {{ else }}
     <title>{{ .Params.Title }} - {{ $profile }}</title>
     {{ end }}
-
     {{ with .Params.meta_description | default .Params.search_engine_optimization.meta_description | default $bodyDesc  }}
     <meta name="description" content="{{ . }}">
     {{ else }}

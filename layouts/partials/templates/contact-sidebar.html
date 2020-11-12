@@ -5,7 +5,7 @@
     <ul class="contact-page-icons">
         {{ if $contactPage.address }}<li class="align-center mb-2">
             <strong class="mr-2">Address:</strong>
-            <a href="https://www.google.com/maps/place/{{ $contactPage.address }}" target="_blank" class="has-text-black has-text-weight-light">{{ $contactPage.address }}</a></li>{{ end }}
+            <a href="https://www.google.com/maps/place/{{ $contactPage.address }}" target="_blank" class="has-text-black has-text-weight-light">{{ $contactPage.address }}, {{ $contactPage.city }}, {{ $contactPage.state }} {{ $contactPage.zip_code }}</a></li>{{ end }}
         {{ if $contactPage.email }}<li class="align-center mb-2">
             <strong class="mr-2">Email:</strong>
             <a href="mailto:{{ $contactPage.email }}" class="has-text-black has-text-weight-light">{{ $contactPage.email }}</a></li> {{ end }}

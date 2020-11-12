@@ -74,6 +74,8 @@ sections:
   path: content/contact/_index.md
   label: Contact
 - type: heading
+  label: Legal
+- type: heading
   label: Developer Access
 - type: document
   path: config.toml

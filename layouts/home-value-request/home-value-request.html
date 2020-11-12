@@ -16,8 +16,8 @@
               <form id="ihf-contact-request-form" data-ihf-event="contact-form-submit" action="https://{{ $.Site.Data.idx.complete_subdomain }}/contact/{{ $.Site.Data.idx.ihf_client_id }}" method="POST" data-ihf-event-bound="true">
               {{ end }}
               {{ end }}
-              {{ if ne $.Site.Data.idx.enable_idx }}
-                <form name="Home Valuation Form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+              {{ if eq $.Site.Data.idx.enable_idx false }}
+                <form name="Home Valuation Form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" id="netlify-home-valuation">
                 <input name="bot-field" type="hidden"/>
               {{ end }}
                     <div class="field is-horizontal">

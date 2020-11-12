@@ -301,7 +301,8 @@ div.text-form {
 
 /* CONTACT */
 
-#ihf-contact-request-form label {
+#ihf-contact-request-form label,
+#netlify-home-valuation label {
   font-weight: 400;
 }
 

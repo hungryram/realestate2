@@ -14,8 +14,12 @@ sections:
   path: data/homelayout.yml
   label: Home Layout
 - type: document
+  path: content/idx-admin/_index.md
+  label: IDX Admin
+  match: "**/*"
+- type: document
   path: data/idx.yaml
-  label: IDX
+  label: IDX Set Up
 - type: directory
   path: content
   label: Pages

@@ -316,6 +316,10 @@ div.text-form {
 
 /* PROPERTY */
 
+.img-holder {
+  cursor: zoom-in;
+}
+
 .darkoverlay {
   overflow: hidden;
 }

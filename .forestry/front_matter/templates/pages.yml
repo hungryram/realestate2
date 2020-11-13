@@ -12,6 +12,3 @@ fields:
   config: {}
   template: seo
   label: SEO
-pages:
-- content/accessibility.md
-- content/privacy-policy.md

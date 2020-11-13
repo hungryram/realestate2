@@ -1,7 +1,8 @@
 $('.responsive-slide').slick({
   dots: true,
   infinite: true,
-  speed: 300,
+  speed: 2000,
+  autoplaySpeed: 3000,
   slidesToShow: 3,
   autoplay: true,
   slidesToScroll: 3,
@@ -40,7 +41,8 @@ $('.responsive-slide').slick({
 $('.team-slide').slick({
   dots: true,
   infinite: true,
-  speed: 300,
+  speed: 2000,
+  autoplaySpeed: 3000,
   slidesToShow: 4,
   autoplay: true,
   slidesToScroll: 1,

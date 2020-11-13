@@ -10,6 +10,9 @@
                     {{ if in .Permalink "privacy" }}
                     <p>By using our website, you consent to our Privacy Policy and agree to its terms. Your privacy is important to us. {{ $company }} ("We", "us", "our" "{{ $company }}") provides this privacy policy to address any privacy concerns you may have and how we use it. If you have any additional questions or require more information, please contact us.</p>
                     {{ end }}
+                    {{ if in .Permalink "terms-and-conditions" }}
+                    <p>By using our website, you agree to be governed by the Terms and Conditions set forth within this website. {{ $company }} ("We", "us", "our" "{{ $company }}") provides this agreement for you to accept and agree to be bound, without modification, limitation or qualification by the Terms. Please read thoroughly and contact us if you have any questions or concerns</p>
+                    {{ end }}
                     {{ .Content }}
                 </div>
             </div>

@@ -63,6 +63,10 @@ textarea.textarea {
   border-radius: 0;
 }
 
+.checkbox span a {
+  text-decoration: underline;
+}
+
 body p,
 body li,
 body a,

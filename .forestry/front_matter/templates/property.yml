@@ -92,6 +92,16 @@ fields:
   config:
     required: false
   label: Price
+- name: schema_price
+  type: number
+  label: Schema Price
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: Enter in numbers only. This is for Schema SEO purposes.
 - name: status
   type: select
   default: ''

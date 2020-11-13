@@ -93,10 +93,14 @@ div.summary-card p {
   text-decoration: underline;
 }
 
-.btn-primary {
+.home-section .btn-primary {
   padding: 10px 20px;
   transition: .3s;
   border-radius: 3px;
+}
+
+.btn-primary {
+  transition: .3s;
 }
 
 button.button {

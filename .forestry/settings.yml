@@ -16,7 +16,6 @@ sections:
 - type: document
   path: content/idx-admin/_index.md
   label: IDX Admin
-  read_only: false
 - type: document
   path: data/idx.yaml
   label: IDX Set Up

@@ -7,7 +7,7 @@
                     <div class="single-property">
                         <div class="box">
                             <div class="columns">
-                                <div class="column">
+                                <div class="column pr-2 pl-2">
                                     <div class="level">
                                         <div class="level-left">
                                             <div class="level-item">
@@ -51,7 +51,7 @@
                                     {{ range .Params.photos.gallery }}
                                     {{/*  <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
                                     </div>  */}}
-                                    <img src="{{ $.Site.Params.cloudinary_url }}{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" style="margin: 0 3px;height:80px;object-fit:cover">
+                                    <img src="{{ $.Site.Params.cloudinary_url }}{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" style="margin: 0 3px;height:60px;object-fit:cover">
                                     {{end}}
                                     </div>
                                 </div>

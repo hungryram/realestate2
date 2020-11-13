@@ -9,7 +9,7 @@
                         <div class="columns is-multiline">
                             {{ $paginator := .Paginate (where .Pages "Type" "blog") 10 }}
                             {{ range $paginator.Pages.ByWeight }}
-                            <div class="column is-full agent-container mb-4">
+                            <div class="column is-full agent-container mb-4 pl-0 pr-0">
                                 <div class="card">
                                     <div class="columns is-vcentered is-variable is-3">
                                         <div class="column is-5 pb-0 pt-0">
@@ -20,7 +20,7 @@
                                             {{ end }}
                                         </div>
                                         <div class="column">
-                                            <div class="content pr-3">
+                                            <div class="content pr-3 pl-3">
                                                 <h1 class="title is-4 mb-2">{{ .Title }}</h1>
                                                 <time class="is-size-7"> {{.Date.Format "Jan 2, 2006" }}</time>
                                                 <div class="content">

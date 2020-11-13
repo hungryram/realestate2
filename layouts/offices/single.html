@@ -5,14 +5,14 @@
             <div class="column is-8">
                 <main>
                     <div class="inner-container">
-                        <div class="column">
+                        <div class="column pl-0 pr-0">
                             <div class="content">
                                 <h1 class="title is-3 mb-2">{{ .Title }}</h1>
                                 {{ if .Params.details.title }}<span class="is-block">{{ .Params.details.title }}</span>{{ end }}
                                 {{ if .Params.details.license_type }}<p>{{ .Params.details.license_type }} {{ .Params.details.license_number }}</p>{{ end }}
                             </div>
                         </div>
-                        <div class="column is-full agent-container mb-4">
+                        <div class="column is-full agent-container mb-4 pl-0 pr-0">
                             <div class="card">
                                 <div class="columns is-vcentered is-variable is-3">
                                     <div class="column is-4 pb-0 pt-0">
@@ -22,7 +22,7 @@
                                         <img src="/assets/nohouse.jpg" alt="no house" style="object-fit: cover;">
                                         {{ end }}
                                     </div>
-                                    <div class="column">
+                                    <div class="column pl-0 pr-0">
                                         <div class="content pr-6 pl-6">
                                             {{ if .Params.contact.office_phone }}
                                             <div class="level mb-0 is-mobile">
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="column pl-0 pr-0">
                             <div class="card">
                                 <header class="card-header">
                                     <h4 class="title is-6 card-header-title">About</h4>

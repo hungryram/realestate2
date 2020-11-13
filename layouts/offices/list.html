@@ -11,7 +11,7 @@
                         <div class="columns is-multiline">
                             {{ $paginator := .Paginate (where .Pages "Type" "offices") 5 }}
                             {{ range $paginator.Pages.ByWeight }}
-                            <div class="column is-full agent-container mb-4">
+                            <div class="column is-full agent-container mb-4 pl-0 pr-0">
                                 <div class="card">
                                     <div class="columns is-vcentered is-variable is-3">
                                         <div class="column is-4 pb-0 pt-0">
@@ -22,7 +22,7 @@
                                             {{ end }}
                                         </div>
                                         <div class="column">
-                                            <div class="content pr-6 pl-6">
+                                            <div class="content pr-4 pl-4">
                                                 <h1 class="title is-4 mb-2">{{ .Title }}</h1>
                                                 {{ if .Params.details.title }}<span class="is-block mb-4">{{ .Params.details.title }}</span>{{ end }}
                                                 {{ if .Params.contact.office_phone }}

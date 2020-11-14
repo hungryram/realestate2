@@ -101,7 +101,8 @@ fields:
     min: 
     max: 
     step: 
-  description: Enter in numbers only. This is for Schema SEO purposes.
+  description: The listing price but use only decimal. This is for SEO purposes on
+    Schema.
 - name: status
   type: select
   default: ''

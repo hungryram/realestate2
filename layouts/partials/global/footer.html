@@ -123,6 +123,7 @@
     buttonText.style.color = '{{ .Site.Data.appearance.colors.button_text_color }}';
     });
 
+    $( ".status:contains('Sold')" ).css( "background", "#d10000" );
 
 </script>
 <script>
@@ -140,7 +141,6 @@ $('#filter-menu').click(function(event){
  event.stopPropagation();
 });
 
-$( ".status:contains('Sold')" ).css( "background", "#d10000" );
 </script>
 </body>
 </html>

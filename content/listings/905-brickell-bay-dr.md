@@ -4,6 +4,7 @@ date = 2020-08-09T00:00:00Z
 featured = ""
 price = "200,840"
 properties = "Townhome"
+schema_price = nil
 short_title = "Modern Home"
 states = "Arizona"
 status = "Sold"
@@ -22,7 +23,7 @@ year_built = "2018"
 [listing_agent]
 listing_agent = "our-team/connor-full.md"
 [photos]
-gallery = ["/v1604963164/40904885-28JPG_luemvn.jpg", "/v1604963164/40904885-27JPG_vudkmi.jpg", "/v1604963164/40904885-26JPG_iu0byn.jpg", "/v1604963164/40904885-25JPG_ne6dxg.jpg", "/v1604963164/40904885-24JPG_pl53cx.jpg", "/v1604963164/40904885-23JPG_pcdmjk.jpg", "/v1604963164/40904885-22JPG_ouquvv.jpg"]
+gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-8JPG_ncfdk2.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-7JPG_m89avp.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-6JPG_oeyqiq.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-5JPG_la9yjm.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-4JPG_cn7pbr.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-3JPG_tvgojj.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-2JPG_uvjukv.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40903982-1JPG_tun1zc.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605401982/templates/realestate2/40902643JPG_akb9uv.jpg", "/v1604963164/40904885-28JPG_luemvn.jpg", "/v1604963164/40904885-27JPG_vudkmi.jpg", "/v1604963164/40904885-26JPG_iu0byn.jpg", "/v1604963164/40904885-25JPG_ne6dxg.jpg", "/v1604963164/40904885-24JPG_pl53cx.jpg", "/v1604963164/40904885-23JPG_pcdmjk.jpg", "/v1604963164/40904885-22JPG_ouquvv.jpg"]
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

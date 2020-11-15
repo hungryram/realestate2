@@ -79,8 +79,6 @@
                                     </div>
                                     <div class="slider-nav">
                                     {{ range .Params.photos.gallery }}
-                                    {{/*  <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
-                                    </div>  */}}
                                     <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" style="margin: 0 3px;height:60px;object-fit:cover">
                                     {{end}}
                                     </div>

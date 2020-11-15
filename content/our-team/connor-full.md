@@ -8,7 +8,7 @@ email = "conner@hungryram.com"
 fax = ""
 phone = "897-463-6754"
 [details]
-agent_photo = "/v1605244902/conner_ofmxtx.jpg"
+agent_photo = "https://res.cloudinary.com/hungryram19/image/upload/v1605401910/templates/realestate2/adult-beard-boy-casual-220453_p4iq5a.jpg"
 languages = []
 license_number = ""
 license_type = ""

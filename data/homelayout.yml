@@ -23,7 +23,7 @@ home_sections:
     specifically for real estate professionals.
   button: Read more
   button_link: "/our-team"
-  image: "/v1604948665/agent-4_i3w6gg.jpg"
+  image: https://res.cloudinary.com/hungryram19/image/upload/v1605402573/templates/realestate2/agent-4_ovchvb.jpg
   image_alt_tag: John
   image_width: '400'
 - template: active-listings

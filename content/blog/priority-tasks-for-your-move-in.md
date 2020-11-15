@@ -2,7 +2,7 @@
 author = "our-team/sammy-palm.md"
 categories = ["Buying", "Moving"]
 date = 2020-08-31T07:00:00Z
-featured_image = "/v1604965503/shutterstock_1612432753_qatznt.jpg"
+featured_image = "/assets/background/luxkitchen.jpg"
 image_alt_tag = "Modern farmhouse kitchen"
 tags = []
 title = "Priority Tasks For Your Move In"

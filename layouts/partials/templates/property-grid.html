@@ -3,7 +3,7 @@
 <div class="card-image">
     <figure class="image is-3by2 darkoverlay">
       {{ if .Params.photos.gallery }}
-      <img src="{{ $.Site.Params.cloudinary_url }}{{ index .Params.photos.gallery 0 }}" alt="{{ .Title }}" style="object-fit:cover">
+      <img src="{{ index .Params.photos.gallery 0 }}" alt="{{ .Title }}" style="object-fit:cover">
       {{ else }}
       <img src="/assets/nohouse.jpg" alt="no house" style="object-fit: cover;">
       {{ end }}

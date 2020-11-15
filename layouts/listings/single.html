@@ -72,8 +72,8 @@
                                 <div class="card">
                                     <div class="slider-for">
                                         {{ range .Params.photos.gallery }}
-                                        <a href="{{ $.Site.Params.cloudinary_url }}{{ . }}">
-                                        <img src="{{ $.Site.Params.cloudinary_url }}{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" class="img-holder">
+                                        <a href="{{ . }}">
+                                        <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" class="img-holder">
                                         </a>
                                         {{end}}
                                     </div>
@@ -81,7 +81,7 @@
                                     {{ range .Params.photos.gallery }}
                                     {{/*  <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
                                     </div>  */}}
-                                    <img src="{{ $.Site.Params.cloudinary_url }}{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" style="margin: 0 3px;height:60px;object-fit:cover">
+                                    <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" style="margin: 0 3px;height:60px;object-fit:cover">
                                     {{end}}
                                     </div>
                                 </div>

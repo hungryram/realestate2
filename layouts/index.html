@@ -92,7 +92,7 @@
                 <div class="card-image">
                   <figure class="image is-square">
                     {{ if .Params.details.agent_photo }}
-                    <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="object-fit: cover;width:100%">
+                    <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }}" style="object-fit: cover;width:100%">
                     {{ else }}
                     <img src="/assets/user.jpg" alt="">
                     {{ end }}
@@ -146,7 +146,7 @@
                 <div class="columns is-vcentered is-variable is-3">
                     <div class="column pb-0 pt-0">
                       {{ if .Params.featured_image }}
-                        <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.featured_image }}" alt="" style="width:100%;height:250px;object-fit:cover">
+                        <img src="{{ .Params.featured_image }}" alt="" style="width:100%;height:250px;object-fit:cover">
                       {{ else }}
                       <img src="/assets/nophoto.jpg" alt="no photo" style="width:100%;height:250px;object-fit:cover">
                       {{ end }}
@@ -186,7 +186,7 @@
       <div class="columns is-vcentered">
         {{ if .image }}
         <div class="column has-text-centered">
-          <img src="{{ $.Site.Params.cloudinary_url }}{{ .image }}" alt="{{ .image_alt_tag }}" width="{{ .image_width }}">
+          <img src="{{ .image }}" alt="{{ .image_alt_tag }}" width="{{ .image_width }}">
         </div>
         {{ end }}
         <div class="column content{{ if .image }}{{ else }} has-text-centered is-half is-offset-one-quarter{{ end }}">
@@ -220,7 +220,7 @@
         {{ range .featured }}
           <div class="column is-4">
             <a href="{{ .link }}">
-              <div class="featured" style="background:linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ $.Site.Params.cloudinary_url }}{{ .image }}) no-repeat center;background-size:cover;padding-top:100px;padding-bottom:100px;border-radius: 4px;">
+              <div class="featured" style="background:linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .image }}) no-repeat center;background-size:cover;padding-top:100px;padding-bottom:100px;border-radius: 4px;">
                   <h5 class="title is-5 has-text-centered has-text-white">{{ .heading }}</h5>
               </div>
             </a>
@@ -232,7 +232,7 @@
   {{ end }}
 
   {{ if eq "text-and-contact-form" .template }}
-  <div class="text-and-contact pt-6 pb-6" style="background:{{ if .background_image }}linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ $.Site.Params.cloudinary_url }}{{ .background_image }}) no-repeat center;background-size:cover{{ else }}{{ .background_color }}{{ end }}!important">
+  <div class="text-and-contact pt-6 pb-6" style="background:{{ if .background_image }}linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ .background_image }}) no-repeat center;background-size:cover{{ else }}{{ .background_color }}{{ end }}!important">
     <div class="inner">
       <div class="section" style="background:transparent">
         <div class="container">
@@ -347,14 +347,14 @@
       <div class="columns tiles">
         <div class="column is-7">
           <a href="{{ .tile_one.link }}">
-            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_one.image }}{{ $.Site.Params.cloudinary_url }}{{ .tile_one.image }}{{ else }}/assets/background/featuredone.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_one.image }}{{ .tile_one.image }}{{ else }}/assets/background/featuredone.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
               <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_one.heading }}</h4>
             </div>
           </a>
         </div>
         <div class="column">
           <a href="{{ .tile_two.link }}">
-            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_two.image }}{{ $.Site.Params.cloudinary_url }}{{ .tile_two.image }}{{ else }}/assets/background/office.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_two.image }}{{ .tile_two.image }}{{ else }}/assets/background/office.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
               <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_two.heading }}</h4>
             </div>
           </a>
@@ -363,14 +363,14 @@
       <div class="columns tiles">
         <div class="column is-5">
           <a href="{{ .tile_three.link }}">
-            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_three.image }}{{ $.Site.Params.cloudinary_url }}{{ .tile_three.image }}{{ else }}/assets/background/team.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_three.image }}{{ .tile_three.image }}{{ else }}/assets/background/team.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
               <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_three.heading }}</h4>
             </div>
           </a>
         </div>
         <div class="column">
           <a href="{{ .tile_four.link }}">
-            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_four.image }}{{ $.Site.Params.cloudinary_url }}{{ .tile_four.image }}{{ else }}/assets/background/home-value.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
+            <div style="background: linear-gradient(rgba(18,27,34,0.4),rgba(18,27,34,0.4)),url({{ if .tile_four.image }}{{ .tile_four.image }}{{ else }}/assets/background/home-value.jpg{{ end }}) no-repeat center;background-size:cover;padding-top:90px;padding-bottom:90px;border-radius:6px">
               <h4 class="title is-5 has-text-centered has-text-white">{{ .tile_four.heading }}</h4>
             </div>
           </a>

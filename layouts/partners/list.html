@@ -16,7 +16,7 @@
                                     <div class="columns is-vcentered is-variable is-3">
                                         <div class="column is-4 pb-0 pt-0">
                                             {{ if .Params.photo_or_logo }}
-                                            <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.photo_or_logo }}" alt="{{ .Title }}" style="width:100%;height:250px;object-fit:cover">
+                                            <img src="{{ .Params.photo_or_logo }}" alt="{{ .Title }}" style="width:100%;height:250px;object-fit:cover">
                                             {{ else }}
                                             <img src="/assets/user.jpg" alt="{{ .Title }}" style="width:100%;height:250px;object-fit:cover">
                                             {{ end }}

@@ -2,7 +2,7 @@
 author = "our-team/brittany-simon.md"
 categories = ["Selling"]
 date = 2020-11-01T07:00:00Z
-featured_image = "/v1604963548/shutterstock_1320713696_gglqnn.jpg"
+featured_image = "/assets/background/repair.jpg"
 image_alt_tag = "White kitchen cabinet drawer with gold handle"
 tags = []
 title = "What to Repair Before You List"

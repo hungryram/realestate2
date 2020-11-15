@@ -2,7 +2,7 @@
 author = "our-team/connor-full.md"
 categories = ["Selling"]
 date = 2020-11-03T08:00:00Z
-featured_image = "/v1604965108/mainimg_lesg47.jpg"
+featured_image = "/assets/background/guide.jpg"
 image_alt_tag = "Business meeting"
 tags = []
 title = "Your Guide to Home Appraisal"

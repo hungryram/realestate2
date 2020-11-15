@@ -24,7 +24,7 @@
                 <div class="media-left">
                   <figure class="image is-96x96">
                     {{ if .Params.featured_image }}
-                    <img src="{{ $.Site.Params.cloudinary_url }}{{ .Params.featured_image }}" alt="{{ .Title }}">
+                    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
                     {{ else }}
                     <img src="/assets/nophoto.jpg" alt="{{ .Title }}">
                     {{ end }}

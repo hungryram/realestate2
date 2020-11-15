@@ -2,7 +2,7 @@
 author = "our-team/brittany-simon.md"
 categories = ["Buying"]
 date = 2020-07-29T07:00:00Z
-featured_image = "/v1604965232/desk_etnrii.jpg"
+featured_image = "/assets/background/desk.jpg"
 image_alt_tag = "Office desk with modern light"
 tags = []
 title = "Hidden Fees to be Aware of When Purchasing a Home"

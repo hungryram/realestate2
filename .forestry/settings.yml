@@ -79,15 +79,13 @@ sections:
   label: Contact
 - type: heading
   label: Legal
-- type: document
-  path: content/legal/terms-and-conditions.md
-  label: Terms and Conditions
-- type: document
-  path: content/legal/privacy-policy.md
-  label: Privacy Policy
-- type: document
-  path: content/legal/accessibility.md
-  label: Accessibility
+- type: directory
+  path: content/legal
+  label: Policies
+  create: documents
+  match: "**/*"
+  templates:
+  - legal
 - type: heading
   label: Developer Access
 - type: document

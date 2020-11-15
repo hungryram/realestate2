@@ -4,6 +4,7 @@ date = 2020-01-11T00:00:00Z
 featured = ""
 price = "$600,000"
 properties = "Townhome"
+schema_price = nil
 short_title = "Modern Home"
 states = "California"
 status = "Active"
@@ -22,7 +23,7 @@ year_built = "2020"
 [listing_agent]
 listing_agent = "our-team/connor-full.md"
 [photos]
-gallery = ["/v1604963548/shutterstock_1612432753_rz3kuo.jpg", "/v1604963548/shutterstock_1320713696_gglqnn.jpg", "/v1604963548/shutterstock_1259517064_fo9bln.jpg", "/v1604963536/shutterstock_489670795_rn7lli.jpg", "/v1604963536/rug-cleaning_lncusn.jpg", "/v1604963536/mainimage_zydvy4.jpg", "/v1604963536/clean-living-room_mbwuuc.jpg"]
+gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-32JPG_bjmquz.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-31JPG_cznhin.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402089/templates/realestate2/40904495-30JPG_opmwaa.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-29JPG_luo6z2.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402089/templates/realestate2/40904495-28JPG_k6a9zw.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-27JPG_qsryxa.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-26JPG_vercji.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-25JPG_phm4p2.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402088/templates/realestate2/40904495-24JPG_gqvtrt.jpg", "/v1604963548/shutterstock_1612432753_rz3kuo.jpg", "/v1604963548/shutterstock_1320713696_gglqnn.jpg", "/v1604963548/shutterstock_1259517064_fo9bln.jpg", "/v1604963536/shutterstock_489670795_rn7lli.jpg", "/v1604963536/rug-cleaning_lncusn.jpg", "/v1604963536/mainimage_zydvy4.jpg", "/v1604963536/clean-living-room_mbwuuc.jpg"]
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

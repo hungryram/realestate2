@@ -8,7 +8,7 @@ email = "sam@hungryram.com"
 fax = ""
 phone = "324-765-9348"
 [details]
-agent_photo = "/v1604961393/kyryll-ushakov-qsjM7zomoEI-unsplash_cory78.jpg"
+agent_photo = "https://res.cloudinary.com/hungryram19/image/upload/v1605401876/templates/realestate2/women-s-white-and-black-button-up-collared-shirt-774909_i3jisw.jpg"
 languages = ["English", "French"]
 license_number = "01970460"
 license_type = "License Number"

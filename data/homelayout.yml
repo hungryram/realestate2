@@ -38,10 +38,10 @@ home_sections:
     link: "/contact"
     heading: Los Angeles
   - heading: Whittier
-    image: "/v1605078607/livingroom_t0atuf.jpg"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1605402939/templates/realestate2/livingroom_az8tp4.jpg
     link: "/contact"
   - heading: Corona
-    image: "/v1604996475/slider3_o30w9i.jpg"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1605402970/templates/realestate2/sidekix-media-l6u4GIKvxBs-unsplash_qipkhd.jpg
     link: "/contact"
 - template: home-agent
   heading: Our Team
@@ -50,7 +50,7 @@ home_sections:
   heading: We help you buy or sell your property quickly
   body: Engage with our professional real estate agents to sell, buy or rent your
     home. Get emails directly to your inbox and manage the lead as you wish.
-  background_image: "/v1604948186/clean-living-room_hshxuu.jpg"
+  background_image: https://res.cloudinary.com/hungryram19/image/upload/v1605403006/templates/realestate2/clean-living-room_b3bubn.jpg
   form:
     heading: Send a message
     body: Engage with our professional real estate agents to sell, buy or rent your

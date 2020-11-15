@@ -4,6 +4,7 @@ date = 2020-12-08T00:00:00Z
 featured = "Featured"
 price = "$350,000"
 properties = "Condo"
+schema_price = nil
 short_title = "Modern Apartment"
 states = "California"
 status = "Active"
@@ -22,7 +23,7 @@ year_built = "2013"
 [listing_agent]
 listing_agent = "our-team/sammy-palm.md"
 [photos]
-gallery = ["/v1604963083/40904885JPG_rkd41m.jpg", "/v1604963083/40904885-39JPG_rxodhp.jpg", "/v1604963083/40904885-38JPG_ml7kml.jpg", "/v1604963083/40904885-37JPG_eitlko.jpg", "/v1604963083/40904885-36JPG_ucgnzc.jpg", "/v1604963083/40904885-35JPG_w6qcxj.jpg", "/v1604963083/40904885-34JPG_twhhyz.jpg", "/v1604963083/40904885-33JPG_ncbciy.jpg"]
+gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982JPG_uvhqsv.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-31JPG_vngwwc.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-30JPG_iqgufr.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-29JPG_jmqkq6.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-28JPG_hopaxa.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-27JPG_ll0ynb.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-26JPG_mnbjus.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-25JPG_nhy8ut.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402064/templates/realestate2/40903982-24JPG_rwi5uo.jpg", "/v1604963083/40904885JPG_rkd41m.jpg", "/v1604963083/40904885-39JPG_rxodhp.jpg", "/v1604963083/40904885-38JPG_ml7kml.jpg", "/v1604963083/40904885-37JPG_eitlko.jpg", "/v1604963083/40904885-36JPG_ucgnzc.jpg", "/v1604963083/40904885-35JPG_w6qcxj.jpg", "/v1604963083/40904885-34JPG_twhhyz.jpg", "/v1604963083/40904885-33JPG_ncbciy.jpg"]
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

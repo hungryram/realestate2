@@ -14,6 +14,10 @@
                     <p>By using our website, you agree to be governed by the Terms and Conditions set forth within this website. {{ $company }} ("We", "us", "our" "{{ $company }}") provides this agreement for you to accept and agree to be bound, without modification, limitation or qualification by the Terms. Please read thoroughly and contact us if you have any questions or concerns</p>
                     {{ end }}
                     {{ .Content }}
+                    {{ if in .Permalink "terms-and-conditions" }}
+                    <h5>Limitation of liability</h5>
+                    <p>In no event shall {{ $company }}, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  {{ $company }}, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
+                    {{ end }}
                 </div>
             </div>
         </div>

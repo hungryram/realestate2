@@ -8,7 +8,7 @@ slideshow:
   body: Modern real estate website powered by new technology. This site does not rely
     on any database which ensures optimal performance and the highest security
   enable_white_text: true
-- image: ''
+- image: https://res.cloudinary.com/hungryram19/image/upload/v1605404343/templates/realestate2/farmhousekitchen_z56hb7.jpg
   subtitle: my subtitle
   body: 'No need to bloat the website with drag and drop or page builders. '
   enable_white_text: true

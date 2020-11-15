@@ -93,16 +93,12 @@ fields:
     required: false
   label: Price
 - name: schema_price
-  type: number
-  label: Schema Price
-  default: 0
-  required: true
+  type: text
   config:
-    min: 
-    max: 
-    step: 
+    required: false
   description: The listing price but use only decimal. This is for SEO purposes on
     Schema.
+  label: Schema Price
 - name: status
   type: select
   default: ''

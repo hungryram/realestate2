@@ -4,6 +4,7 @@ date = ""
 featured = ""
 price = "$500,000"
 properties = "Farmranch"
+schema_price = nil
 short_title = "Just Renovated"
 states = "California"
 status = "Active"
@@ -22,7 +23,7 @@ year_built = "2013"
 [listing_agent]
 listing_agent = "our-team/brittany-simon.md"
 [photos]
-gallery = ["/v1604963655/whiteinterior_wdqk6m.jpg", "/v1604963654/sidekix-media-l6u4GIKvxBs-unsplash_pdnfef.jpg", "/v1604963654/shutterstock_608664209_v9qioa.jpg", "/v1604963655/shutterstock_570081934_hofclj.jpg", "/v1604963654/shutterstock_451421581_c8brzt.jpg", "/v1604963654/luxkitchen_lkl5o8.jpg", "/v1604963654/luxbackyard1_bi08kg.jpg"]
+gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-20JPG_pllhdi.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-19JPG_cbheyg.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-18JPG_htfgrf.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-17JPG_zdsfkw.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-16JPG_gvmlsk.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-15JPG_drxtvc.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-14JPG_tuiurf.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-13JPG_pn706k.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1605402014/templates/realestate2/40904495-12JPG_oouof2.jpg", "/v1604963655/whiteinterior_wdqk6m.jpg", "/v1604963654/sidekix-media-l6u4GIKvxBs-unsplash_pdnfef.jpg", "/v1604963654/shutterstock_608664209_v9qioa.jpg", "/v1604963655/shutterstock_570081934_hofclj.jpg", "/v1604963654/shutterstock_451421581_c8brzt.jpg", "/v1604963654/luxkitchen_lkl5o8.jpg", "/v1604963654/luxbackyard1_bi08kg.jpg"]
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

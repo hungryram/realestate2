@@ -8,7 +8,7 @@ email = "matt@hungryram.com"
 fax = ""
 phone = "4440-232-2322"
 [details]
-agent_photo = "/v1604961169/adult-beard-boy-casual-220453_db9uaj.jpg"
+agent_photo = "https://res.cloudinary.com/hungryram19/image/upload/v1605401894/templates/realestate2/conner_lm16xr.jpg"
 languages = ["English", "Spanish"]
 license_number = "43253475"
 license_type = "License Number"

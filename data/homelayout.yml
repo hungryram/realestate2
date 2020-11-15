@@ -34,7 +34,7 @@ home_sections:
   body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro optio fugit
     non delectus eos, quas, dolorem alias '
   featured:
-  - image: "/v1605078586/losangeles_huzxzc.jpg"
+  - image: https://res.cloudinary.com/hungryram19/image/upload/v1605402922/templates/realestate2/losangeles_z6wp8g.jpg
     link: "/contact"
     heading: Los Angeles
   - heading: Whittier

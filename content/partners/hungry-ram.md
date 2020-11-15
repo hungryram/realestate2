@@ -1,5 +1,5 @@
 +++
-photo_or_logo = "/v1605159239/0_piqifa.jpg"
+photo_or_logo = "https://res.cloudinary.com/hungryram19/image/upload/v1605402686/templates/realestate2/0_cibrh7.jpg"
 title = "Hungry Ram"
 url = ""
 [contact]

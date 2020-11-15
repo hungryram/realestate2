@@ -4,7 +4,7 @@
     {
         "@context":"http://schema.org",
         "@type":"Residence",
-        "image": "{{ .Site.Params.cloudinary_url }}{{ index .Params.photos.gallery 0 }}",
+        "image": "{{ index .Params.photos.gallery 0 }}",
         "address":{
            "@type":"PostalAddress",
            "streetAddress":"{{ .Title }}",
@@ -18,7 +18,7 @@
     {
         "@context":"http://schema.org",
         "@type":"Product",
-        "image": "{{ .Site.Params.cloudinary_url }}{{ index .Params.photos.gallery 0 }}",
+        "image": "{{ index .Params.photos.gallery 0 }}",
         "name":"{{ .Title }}, {{ .Params.cities }}, {{ .Params.states }} {{ index .Params "zip-codes" }}",
         "offers":{
            "@type":"Offer",

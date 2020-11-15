@@ -7,7 +7,7 @@
     "name" : "{{ $profile.company_name }}",
     "description" : "{{ $profile.search_engine_optimization.meta_description }}",
     "logo" : "{{ .Site.Data.appearance.branding.logo }}",
-    "image" : "{{ .Site.Params.cloudinary_url }}{{ .Site.Data.home.hero.image | absURL }}",
+    "image" : "{{ .Site.Data.home.hero.image | absURL }}",
     "telephone" : "{{ $profile.primary_contact.phone }}",
     "address" : {
     "@type" : "PostalAddress",

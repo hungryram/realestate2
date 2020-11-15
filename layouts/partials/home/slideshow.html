@@ -2,7 +2,7 @@
 {{ partial "global/navbar.html" . }}
 <div class="home-slide">
 {{ range .Site.Data.homelayout.slideshow }}
-<section class="hero is-fullheight" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url({{ if .image }}{{ $.Site.Params.cloudinary_url }}{{ .image }}{{ else }}/assets/background/slider2.jpg{{ end }});height:100vh;background-size:cover;background-position:center;display:flex;margin-top:-90px">
+<section class="hero is-fullheight" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url({{ if .image }}{{ .image }}{{ else }}/assets/background/slider2.jpg{{ end }});height:100vh;background-size:cover;background-position:center;display:flex;margin-top:-90px">
   <!-- Hero head: will stick at the top -->
 
 

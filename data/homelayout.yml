@@ -1,12 +1,11 @@
 ---
 slideshow:
-- heading: Explore Beautiful Homes
+- heading: I love this theme!
   subtitle: Let our team of experts guide you to your next home
   link_label: Read More
   link: https://www.hungryram.com
   image: https://res.cloudinary.com/hungryram19/image/upload/v1605404579/templates/realestate2/slider3_o30w9i_pujrai.jpg
-  body: Modern real estate website powered by new technology. This site does not rely
-    on any database which ensures optimal performance and the highest security
+  body: Check out this slideshow
   enable_white_text: true
 - image: https://res.cloudinary.com/hungryram19/image/upload/v1605404343/templates/realestate2/farmhousekitchen_z56hb7.jpg
   subtitle: my subtitle

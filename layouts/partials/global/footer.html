@@ -94,6 +94,9 @@
     document.querySelectorAll(".link").forEach(function(link) {
     link.style.color = '{{ .Site.Data.appearance.colors.links }}';
     });
+    document.querySelectorAll("div.content a").forEach(function(contentLink) {
+    contentLink.style.color = '{{ .Site.Data.appearance.colors.links }}';
+    });
     document.querySelectorAll(".accent").forEach(function(accent) {
     accent.style.backgroundColor = '{{ .Site.Data.appearance.colors.accent }}';
     });

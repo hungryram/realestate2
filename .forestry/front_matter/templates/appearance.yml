@@ -105,21 +105,6 @@ fields:
   - name: enable_black_text
     type: boolean
     label: Enable Black Text
-  - name: additional_links
-    type: field_group
-    config: {}
-    fields:
-    - name: quick_links
-      type: list
-      config:
-        use_select: true
-        min: 
-        max: 
-        source:
-          type: pages
-          section: pages
-      label: Quick Links
-    label: Additional Links
   - name: logo
     type: file
     config:

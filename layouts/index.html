@@ -246,9 +246,9 @@
                 {{ if .form.heading }}
                 <h2 class="title is-4">{{ .form.heading }}</h2>
                 {{ end }}
-                {{ if .form.heading }}
+                {{ if .form.body }}
                 <div class="summary-card mb-4">
-                  <p>{{ .body | markdownify }}</p>
+                  <p>{{ .form.body | markdownify }}</p>
                 </div>
                 {{ end }}
                 {{ if $.Site.Data.idx.enable_idx }}

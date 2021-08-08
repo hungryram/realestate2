@@ -79,3 +79,6 @@ home_sections:
 - template: home-blog
   heading: Our Blog
   body: Keep up with latest posts
+- template: home-testimonial
+  heading: Our Client Reviews
+  body: ''
